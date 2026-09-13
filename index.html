@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alejandro Pérez Bretón | CV</title>
     <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTub00Pbc5K_jijLz6htbn5kSjAC9rk59LtSMU7Mrb0udrJhk2HlCfkB4I&s=10">
-    
+
     <!-- Fuentes: Inter (Similar a Apple San Francisco) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Iconos FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwUEQ1o1m5n7Zt4q7x5JX2OeWgqK9m5A+1Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -128,7 +125,7 @@
             margin: 0;
             font-size: clamp(2rem, 3vw, 3.2rem);
             line-height: 1.05;
-            letter-spacing: -0.06em;
+            letter-spacing: 0;
             color: white;
         }
 
@@ -173,7 +170,7 @@
         .metric-value {
             font-size: clamp(1.6rem, 3vw, 2.5rem);
             font-weight: 800;
-            letter-spacing: -0.06em;
+            letter-spacing: 0;
             color: white;
         }
 
@@ -229,14 +226,14 @@
             height: 100px;
             transform: translate(-50%, -50%);
             border-radius: 50%;
-            background: linear-gradient(135deg, rgba(110,231,255,0.42), rgba(139,92,246,0.42));
+            background: linear-gradient(135deg, #075985, #4c1d95);
             border: 1px solid rgba(255,255,255,0.12);
             display: grid;
             place-items: center;
             box-shadow: 0 0 30px rgba(110, 231, 255, 0.18), inset 0 1px 0 rgba(255,255,255,0.25);
             font-weight: 800;
             color: white;
-            letter-spacing: -0.05em;
+            letter-spacing: 0;
             font-size: 1.1rem;
         }
 
@@ -311,7 +308,7 @@
         .focus-item strong {
             color: white;
             font-size: 0.85rem;
-            letter-spacing: -0.02em;
+            letter-spacing: 0;
         }
 
         .timeline {
@@ -395,7 +392,7 @@
             place-items: center;
             font-weight: 800;
             color: white;
-            background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+            background: linear-gradient(135deg, #4c1d95, #075985);
         }
 
         .company-label {
@@ -411,7 +408,7 @@
             margin: 0;
             font-size: clamp(1.1rem, 2vw, 1.5rem);
             color: white;
-            letter-spacing: -0.04em;
+            letter-spacing: 0;
         }
 
         .pill-status {
@@ -455,7 +452,7 @@
             letter-spacing: 0.08em;
             color: white;
             border: 1px solid rgba(255,255,255,0.15);
-            background: linear-gradient(135deg, rgba(34,211,238,0.2), rgba(168,85,247,0.3));
+            background: linear-gradient(135deg, #0e7490, #4c1d95);
             box-shadow: inset 0 1px 0 rgba(255,255,255,0.16), 0 12px 24px rgba(15, 23, 42, 0.22);
         }
 
@@ -568,7 +565,7 @@
             color: white;
             font-weight: 800;
             letter-spacing: 0.05em;
-            background: linear-gradient(135deg, rgba(34,211,238,0.28), rgba(168,85,247,0.34));
+            background: linear-gradient(135deg, #0e7490, #4c1d95);
             border: 1px solid rgba(255,255,255,0.14);
         }
 
@@ -629,7 +626,7 @@
         .cta h2 {
             margin: 0;
             font-size: clamp(1.8rem, 2.5vw, 2.8rem);
-            letter-spacing: -0.06em;
+            letter-spacing: 0;
             color: white;
         }
 
@@ -699,7 +696,7 @@
         }
 
         .secondary-btn {
-            background: rgba(255,255,255,0.04);
+            background: #111827;
             border: 1px solid rgba(255,255,255,0.12);
             color: white;
         }
@@ -813,7 +810,7 @@
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.2-.75 6.8 5.18 6.8-5.18H5.2Zm13.05 2.2-5.96 4.54a1 1 0 0 1-1.18 0L5.75 8.2v9.05c0 .41.34.75.75.75h10.99c.41 0 .75-.34.75-.75V8.2Z"/></svg>
                         <span class="hidden sm:inline">Email</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/alejandro-perez-breton-756459b0" target="_blank" rel="noreferrer" class="social-btn text-sm text-slate-200">
+                    <a href="https://www.linkedin.com/in/alejandro-perez-breton-756459b0" target="_blank" rel="noopener noreferrer" class="social-btn text-sm text-slate-200">
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1ZM5.5 9.75h2.88v8.75H5.5V9.75Zm4.72 0h2.76v1.2h.04c.38-.72 1.32-1.48 2.72-1.48 2.9 0 3.44 1.9 3.44 4.38v4.65h-2.88v-4.36c0-1.04-.02-2.38-1.45-2.38-1.46 0-1.68 1.14-1.68 2.31v4.43H10.22V9.75Z"/></svg>
                         <span class="hidden sm:inline">LinkedIn</span>
                     </a>
@@ -838,7 +835,7 @@
                                 Alejandro Pérez Bretón
                             </h1>
                             <p class="text-xl md:text-2xl text-slate-300 mb-6">
-                                Technical Lead & Cloud Architect
+                                Technical Lead &amp; Cloud Architect
                             </p>
                             <p class="text-base md:text-lg text-slate-400 max-w-2xl leading-relaxed">
                                 Especialista en arquitectura backend, microservicios, DevOps y modernización de plataformas empresariales con más de 15 años de experiencia liderando equipos y soluciones de alto impacto.
@@ -872,10 +869,10 @@
 
                     <div class="reveal">
                         <div class="orbit-wrap glass-panel p-6 md:p-8">
-                            <div class="orbit-title">Stack & Focus</div>
+                            <div class="orbit-title">Stack &amp; Focus</div>
                             <div class="orbital-visual">
-                                <div class="core-node" aria-label="Arquitectura de sistemas y computación">
-                                    <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <div class="core-node">
+                                    <svg viewBox="0 0 48 48" role="img" aria-label="Arquitectura de sistemas y computación">
                                         <rect x="7" y="7" width="34" height="25" rx="3" />
                                         <path d="M17 41h14M24 32v9M12 37h24" />
                                         <path d="M15 14h18M15 19h11M15 24h15" />
@@ -883,29 +880,29 @@
                                     </svg>
                                 </div>
                                 <div class="orbit-node node-1">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
                                 </div>
                                 <div class="orbit-node node-2">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring">
                                 </div>
                                 <div class="orbit-node node-3">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
                                 </div>
                                 <div class="orbit-node node-4">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes">
                                 </div>
                                 <div class="orbit-node node-5">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
                                 </div>
                                 <div class="orbit-node node-6">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP">
                                 </div>
                             </div>
 
                             <div class="focus-list">
                                 <div class="focus-item">
                                     <span class="focus-kicker">Arquitectura</span>
-                                    <strong>Microservicios</strong>
+                                    <strong>Microservicios - Orientada a Eventos</strong>
                                 </div>
                                 <div class="focus-item">
                                     <span class="focus-kicker">Cloud</span>
@@ -917,7 +914,7 @@
                                 </div>
                                 <div class="focus-item">
                                     <span class="focus-kicker">Liderazgo</span>
-                                    <strong>Teams & Strategy</strong>
+                                    <strong>Teams &amp; Strategy</strong>
                                 </div>
                             </div>
                         </div>
@@ -972,7 +969,7 @@
                         <div class="timeline-card glass-panel">
                             <div class="timeline-header">
                                 <div class="company-identity">
-                                    <div class="brand-mark" aria-label="MetLife">M</div>
+                                    <div class="brand-mark">M</div>
                                     <div>
                                         <p class="company-label">Imagemaker</p>
                                         <h3>Team Lead</h3>
@@ -998,7 +995,7 @@
                         <div class="timeline-card glass-panel">
                             <div class="timeline-header">
                                 <div class="company-identity">
-                                    <div class="brand-mark" aria-label="Falabella">F</div>
+                                    <div class="brand-mark">F</div>
                                     <div>
                                         <p class="company-label">Falabella</p>
                                         <h3>Senior Java Software Engineer</h3>
@@ -1024,7 +1021,7 @@
                         <div class="timeline-card glass-panel">
                             <div class="timeline-header">
                                 <div class="company-identity">
-                                    <div class="brand-mark" aria-label="Globant">G</div>
+                                    <div class="brand-mark">G</div>
                                     <div>
                                         <p class="company-label">Globant</p>
                                         <h3>Senior Java Software Engineer</h3>
@@ -1104,7 +1101,7 @@
                                     <div class="company-initial bg-gradient-to-r from-emerald-500 to-cyan-500">A</div>
                                     <div>
                                         <p class="company-label">Trayectoria previa</p>
-                                        <h3>Full Stack & Web Developer</h3>
+                                        <h3>Full Stack &amp; Web Developer</h3>
                                     </div>
                                 </div>
                                 <span class="pill-status">Diversos clientes</span>
@@ -1132,42 +1129,42 @@
 
                 <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
                     <div class="tech-card glass-panel reveal">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
                         <h3>Backend Core</h3>
                         <p>Java, Spring Boot, JPA/Hibernate, MyBatis, REST APIs.</p>
                     </div>
                     <div class="tech-card glass-panel reveal">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
                         <h3>DevOps</h3>
                         <p>Docker, Kubernetes, CI/CD, GitHub, GitLab, Azure DevOps.</p>
                     </div>
                     <div class="tech-card glass-panel reveal">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" />
-                        <h3>Cloud & Platform</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+                        <h3>Cloud &amp; Platform</h3>
                         <p>Azure API Management, AKS, Azure Database, cloud migration.</p>
                     </div>
                     <div class="tech-card glass-panel reveal">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud" />
-                        <h3>Cloud & Data</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud">
+                        <h3>Cloud &amp; Data</h3>
                         <p>GCP, Pub/Sub, Cloud SQL, Cloud Storage, Dataflow.</p>
                     </div>
                     <div class="tech-card glass-panel reveal">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka" />
-                        <h3>Streaming & Integración</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka">
+                        <h3>Streaming &amp; Integración</h3>
                         <p>Kafka, event-driven architecture, integración de eventos.</p>
                     </div>
                     <div class="tech-card glass-panel reveal">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
                         <h3>Productividad</h3>
                         <p>GitHub Copilot, IA aplicada a desarrollo, refactorización y tests.</p>
                     </div>
                     <div class="tech-card glass-panel reveal">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-                        <h3>Frontend & Entornos</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        <h3>Frontend &amp; Entornos</h3>
                         <p>React, Node.js, Linux, automatización de despliegues.</p>
                     </div>
                     <div class="tech-card glass-panel reveal">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" alt="Testing" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" alt="Testing">
                         <h3>Calidad</h3>
                         <p>JUnit, Mockito, TDD, k6, performance testing y QA continua.</p>
                     </div>
@@ -1179,47 +1176,47 @@
                     <p class="eyebrow">Clientes y partners</p>
                     <h2>Empresas con las que he trabajado.</h2>
                 </div>
-                <div class="brand-carousel reveal">
-                    <div class="brand-track" data-brand-track aria-label="Carrusel automático de empresas y partners">
+                <section class="brand-carousel reveal" aria-label="Clientes y partners">
+                    <section class="brand-track" data-brand-track aria-label="Carrusel automático de empresas y partners">
                         <div class="brand-track-inner" data-brand-track-inner>
                         <div class="brand-card glass-panel">
-                            <img src="https://www.google.com/s2/favicons?domain=metlife.com&sz=128" alt="Logo de MetLife" loading="lazy" />
+                            <img src="https://www.google.com/s2/favicons?domain=metlife.com&sz=128" alt="Logo de MetLife" loading="lazy">
                             <span class="brand-fallback">ML</span>
                             <span>MetLife</span>
                         </div>
                         <div class="brand-card glass-panel">
-                            <img src="https://www.google.com/s2/favicons?domain=falabella.com&sz=128" alt="Logo de Falabella" loading="lazy" />
+                            <img src="https://www.google.com/s2/favicons?domain=falabella.com&sz=128" alt="Logo de Falabella" loading="lazy">
                             <span class="brand-fallback">FB</span>
                             <span>Falabella</span>
                         </div>
                         <div class="brand-card glass-panel">
-                            <img src="https://www.google.com/s2/favicons?domain=ikea.com&sz=128" alt="Logo de IKEA" loading="lazy" />
+                            <img src="https://www.google.com/s2/favicons?domain=ikea.com&sz=128" alt="Logo de IKEA" loading="lazy">
                             <span class="brand-fallback">IK</span>
                             <span>IKEA</span>
                         </div>
                         <div class="brand-card glass-panel">
-                            <img src="https://www.google.com/s2/favicons?domain=globant.com&sz=128" alt="Logo de Globant" loading="lazy" />
+                            <img src="https://www.google.com/s2/favicons?domain=globant.com&sz=128" alt="Logo de Globant" loading="lazy">
                             <span class="brand-fallback">GL</span>
                             <span>Globant</span>
                         </div>
                         <div class="brand-card glass-panel">
-                            <img src="https://www.google.com/s2/favicons?domain=latam.com&sz=128" alt="Logo de LATAM" loading="lazy" />
+                            <img src="https://www.google.com/s2/favicons?domain=latam.com&sz=128" alt="Logo de LATAM" loading="lazy">
                             <span class="brand-fallback">LT</span>
                             <span>LATAM</span>
                         </div>
                         <div class="brand-card glass-panel">
-                            <img src="https://www.google.com/s2/favicons?domain=transbank.cl&sz=128" alt="Logo de Transbank" loading="lazy" />
+                            <img src="https://www.google.com/s2/favicons?domain=transbank.cl&sz=128" alt="Logo de Transbank" loading="lazy">
                             <span class="brand-fallback">TB</span>
                             <span>Transbank</span>
                         </div>
                         <div class="brand-card glass-panel">
-                            <img src="https://www.google.com/s2/favicons?domain=toku.cl&sz=128" alt="Logo de TOKU" loading="lazy" />
+                            <img src="https://www.google.com/s2/favicons?domain=toku.cl&sz=128" alt="Logo de TOKU" loading="lazy">
                             <span class="brand-fallback">TK</span>
                             <span>TOKU</span>
                         </div>
                         </div>
-                    </div>
-                </div>
+                    </section>
+                </section>
             </section>
 
             <section id="contacto" class="max-w-5xl mx-auto px-6 pb-24">
@@ -1238,7 +1235,7 @@
                                 <span class="contact-btn-detail">aperezbreton@gmail.com</span>
                             </span>
                         </a>
-                        <a href="https://www.linkedin.com/in/alejandro-p%C3%A9rez-bret%C3%B3n-756459b0/" target="_blank" rel="noreferrer" class="secondary-btn" aria-label="Visitar el perfil de LinkedIn de Alejandro Pérez Bretón">
+                        <a href="https://www.linkedin.com/in/alejandro-p%C3%A9rez-bret%C3%B3n-756459b0/" target="_blank" rel="noopener noreferrer" class="secondary-btn" aria-label="Visitar el perfil de LinkedIn de Alejandro Pérez Bretón">
                             <span class="contact-btn-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1ZM5.5 9.75h2.88v8.75H5.5V9.75Zm4.72 0h2.76v1.2h.04c.38-.72 1.32-1.48 2.72-1.48 2.9 0 3.44 1.9 3.44 4.38v4.65h-2.88v-4.36c0-1.04-.02-2.38-1.45-2.38-1.46 0-1.68 1.14-1.68 2.31v4.43H10.22V9.75Z" /></svg>
                             </span>
@@ -1267,12 +1264,14 @@
         revealElements.forEach(el => observer.observe(el));
 
         const brandTrackInner = document.querySelector('[data-brand-track-inner]');
-        const brandCards = Array.from(brandTrackInner.children);
-        brandCards.forEach(card => {
-            const clone = card.cloneNode(true);
-            clone.setAttribute('aria-hidden', 'true');
-            brandTrackInner.appendChild(clone);
-        });
+        if (brandTrackInner) {
+            const brandCards = Array.from(brandTrackInner.children);
+            brandCards.forEach(card => {
+                const clone = card.cloneNode(true);
+                clone.setAttribute('aria-hidden', 'true');
+                brandTrackInner.appendChild(clone);
+            });
+        }
 
         document.querySelectorAll('.brand-card img').forEach(image => {
             image.addEventListener('error', () => {
