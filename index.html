@@ -187,8 +187,11 @@
             position: relative;
             min-height: 520px;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: 1.25rem;
+            padding: 1.5rem 1.4rem 1.2rem;
         }
 
         .orbit-title {
@@ -203,47 +206,74 @@
         }
 
         .orbital-visual {
-            width: 320px;
-            height: 320px;
+            width: 340px;
+            height: 340px;
             position: relative;
-            animation: float 6s ease-in-out infinite;
+            margin-top: 0.5rem;
+        }
+
+        .orbital-visual::before {
+            content: "";
+            position: absolute;
+            inset: 11%;
+            border-radius: 50%;
+            border: 1px solid rgba(148, 163, 184, 0.18);
+            box-shadow: inset 0 0 0 1px rgba(110, 231, 255, 0.06), 0 0 40px rgba(96, 165, 250, 0.05);
+            background: radial-gradient(circle at center, rgba(110,231,255,0.04), transparent 60%);
         }
 
         .core-node {
             position: absolute;
             inset: 50% auto auto 50%;
-            width: 92px;
-            height: 92px;
+            width: 100px;
+            height: 100px;
             transform: translate(-50%, -50%);
             border-radius: 50%;
-            background: linear-gradient(135deg, rgba(110,231,255,0.36), rgba(139,92,246,0.36));
-            border: 1px solid rgba(255,255,255,0.1);
+            background: linear-gradient(135deg, rgba(110,231,255,0.42), rgba(139,92,246,0.42));
+            border: 1px solid rgba(255,255,255,0.12);
             display: grid;
             place-items: center;
-            box-shadow: 0 0 30px rgba(96, 165, 250, 0.18);
+            box-shadow: 0 0 30px rgba(110, 231, 255, 0.18), inset 0 1px 0 rgba(255,255,255,0.25);
             font-weight: 800;
             color: white;
             letter-spacing: -0.05em;
+            font-size: 1.1rem;
+        }
+
+        .core-node svg {
+            width: 38px;
+            height: 38px;
+            fill: none;
+            stroke: currentColor;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 1.35;
         }
 
         .orbit-node {
             position: absolute;
-            width: 58px;
-            height: 58px;
-            border-radius: 50%;
+            width: 62px;
+            height: 62px;
+            border-radius: 18px;
             background: rgba(15, 23, 42, 0.88);
             border: 1px solid rgba(255,255,255,0.08);
             display: grid;
             place-items: center;
             backdrop-filter: blur(14px);
-            box-shadow: 0 20px 30px rgba(0,0,0,0.25);
-            animation: spin 18s linear infinite;
+            box-shadow: 0 18px 28px rgba(0,0,0,0.22), inset 0 1px 0 rgba(255,255,255,0.08);
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .orbit-node:hover {
+            border-color: rgba(110, 231, 255, 0.45);
+            box-shadow: 0 20px 34px rgba(0,0,0,0.28), 0 0 20px rgba(110, 231, 255, 0.12);
         }
 
         .orbit-node img {
-            width: 24px;
-            height: 24px;
+            width: 26px;
+            height: 26px;
             object-fit: contain;
+            filter: drop-shadow(0 6px 10px rgba(110, 231, 255, 0.12));
         }
 
         .node-1 { top: 12%; left: 50%; transform: translateX(-50%); }
@@ -252,6 +282,37 @@
         .node-4 { top: 38%; left: 6%; }
         .node-5 { top: 68%; right: 20%; }
         .node-6 { top: 68%; left: 20%; }
+
+        .focus-list {
+            width: min(100%, 360px);
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.6rem;
+        }
+
+        .focus-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            padding: 0.82rem 0.9rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.07);
+            background: rgba(15, 23, 42, 0.42);
+        }
+
+        .focus-kicker {
+            color: var(--primary);
+            font-size: 0.63rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .focus-item strong {
+            color: white;
+            font-size: 0.85rem;
+            letter-spacing: -0.02em;
+        }
 
         .timeline {
             position: relative;
@@ -386,14 +447,42 @@
         .brand-mark {
             width: 42px;
             height: 42px;
-            border-radius: 12px;
+            border-radius: 14px;
             display: grid;
             place-items: center;
-            font-size: 0.8rem;
+            font-size: 0.76rem;
             font-weight: 800;
+            letter-spacing: 0.08em;
             color: white;
-            border: 1px solid rgba(255,255,255,0.12);
-            background: linear-gradient(135deg, rgba(34,211,238,0.2), rgba(168,85,247,0.25));
+            border: 1px solid rgba(255,255,255,0.15);
+            background: linear-gradient(135deg, rgba(34,211,238,0.2), rgba(168,85,247,0.3));
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.16), 0 12px 24px rgba(15, 23, 42, 0.22);
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.55rem;
+            padding: 0.72rem 0.95rem;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.04);
+            color: var(--text);
+            transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-2px);
+            border-color: rgba(110, 231, 255, 0.35);
+            background: rgba(110, 231, 255, 0.06);
+        }
+
+        .social-btn svg {
+            width: 16px;
+            height: 16px;
+            display: block;
+            fill: currentColor;
         }
 
         .tech-card:hover,
@@ -425,23 +514,78 @@
         }
 
         .brand-card {
+            flex: 0 0 clamp(180px, 23vw, 220px);
+            min-height: 148px;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 0.7rem;
-            min-height: 120px;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.15rem;
+            scroll-snap-align: start;
+            transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
         }
 
         .brand-card img {
-            width: 42px;
-            height: 42px;
+            width: 52px;
+            height: 52px;
             object-fit: contain;
+            object-position: left center;
+            filter: saturate(0.92) brightness(1.08);
         }
 
-        .brand-card span {
+        .brand-card > span {
             color: var(--muted);
             font-weight: 600;
+            font-size: 0.86rem;
+        }
+
+        .brand-card .brand-fallback {
+            display: none;
+            width: 52px;
+            height: 52px;
+            place-items: center;
+            border-radius: 15px;
+            color: white;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            background: linear-gradient(135deg, rgba(34,211,238,0.28), rgba(168,85,247,0.34));
+            border: 1px solid rgba(255,255,255,0.14);
+        }
+
+        .brand-carousel {
+            position: relative;
+        }
+
+        .brand-track {
+            display: flex;
+            gap: 1rem;
+            overflow: hidden;
+            padding: 0.35rem 0.1rem 1rem;
+        }
+
+        .brand-track-inner {
+            display: flex;
+            flex: 0 0 auto;
+            gap: 1rem;
+            width: max-content;
+            animation: brand-marquee 34s linear infinite;
+        }
+
+        .brand-track:hover .brand-track-inner,
+        .brand-track:focus-within .brand-track-inner {
+            animation-play-state: paused;
+        }
+
+        @keyframes brand-marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(calc(-50% - 0.5rem)); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .brand-track-inner {
+                animation: none;
+            }
         }
 
         .cta {
@@ -451,6 +595,16 @@
             align-items: center;
             gap: 1.25rem;
             background: linear-gradient(135deg, rgba(17, 24, 39, 0.85), rgba(15, 118, 110, 0.16));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta::before {
+            content: "";
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--primary), var(--secondary));
         }
 
         .cta h2 {
@@ -464,24 +618,65 @@
             display: flex;
             flex-wrap: wrap;
             gap: 0.75rem;
+            justify-content: flex-end;
         }
 
         .primary-btn,
         .secondary-btn {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             min-height: 52px;
-            padding: 0.85rem 1.25rem;
-            border-radius: 999px;
+            padding: 0.7rem 1rem;
+            border-radius: 16px;
             font-weight: 700;
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .contact-btn-icon {
+            width: 38px;
+            height: 38px;
+            flex: 0 0 38px;
+            display: grid;
+            place-items: center;
+            margin-right: 0.7rem;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.16);
+        }
+
+        .contact-btn-icon svg {
+            width: 18px;
+            height: 18px;
+            display: block;
+            fill: currentColor;
+        }
+
+        .contact-btn-copy {
+            display: flex;
+            flex-direction: column;
+            gap: 0.12rem;
+            line-height: 1.1;
+        }
+
+        .contact-btn-label {
+            font-size: 0.88rem;
+        }
+
+        .contact-btn-detail {
+            color: inherit;
+            opacity: 0.68;
+            font-size: 0.67rem;
+            font-weight: 500;
         }
 
         .primary-btn {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: #02111f;
             box-shadow: 0 12px 28px rgba(110,231,255,0.28);
+        }
+
+        .primary-btn .contact-btn-icon {
+            background: rgba(2, 17, 31, 0.16);
         }
 
         .secondary-btn {
@@ -495,6 +690,11 @@
             transform: translateY(-2px);
         }
 
+        .secondary-btn:hover {
+            border-color: rgba(110, 231, 255, 0.42);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+        }
+
         .reveal {
             opacity: 0;
             transform: translateY(24px);
@@ -504,12 +704,6 @@
         .reveal.visible {
             opacity: 1;
             transform: translateY(0);
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg) translateY(0px); }
-            50% { transform: rotate(180deg) translateY(8px); }
-            100% { transform: rotate(360deg) translateY(0px); }
         }
 
         @keyframes float {
@@ -556,6 +750,16 @@
                 flex-direction: column;
                 align-items: flex-start;
             }
+
+            .cta-actions {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .primary-btn,
+            .secondary-btn {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -574,12 +778,12 @@
                     <a href="#contacto" class="hover:text-white transition">Contacto</a>
                 </div>
                 <div class="flex gap-3">
-                    <a href="mailto:aperezbreton@gmail.com" class="inline-flex items-center gap-2 px-3 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-slate-200 hover:border-cyan-400/40 hover:text-white transition">
-                        <i class="fas fa-envelope"></i>
+                    <a href="mailto:aperezbreton@gmail.com" class="social-btn text-sm text-slate-200">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.2-.75 6.8 5.18 6.8-5.18H5.2Zm13.05 2.2-5.96 4.54a1 1 0 0 1-1.18 0L5.75 8.2v9.05c0 .41.34.75.75.75h10.99c.41 0 .75-.34.75-.75V8.2Z"/></svg>
                         <span class="hidden sm:inline">Email</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/alejandro-perez-breton-756459b0" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-3 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-slate-200 hover:border-violet-400/40 hover:text-white transition">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/alejandro-perez-breton-756459b0" target="_blank" rel="noreferrer" class="social-btn text-sm text-slate-200">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1ZM5.5 9.75h2.88v8.75H5.5V9.75Zm4.72 0h2.76v1.2h.04c.38-.72 1.32-1.48 2.72-1.48 2.9 0 3.44 1.9 3.44 4.38v4.65h-2.88v-4.36c0-1.04-.02-2.38-1.45-2.38-1.46 0-1.68 1.14-1.68 2.31v4.43H10.22V9.75Z"/></svg>
                         <span class="hidden sm:inline">LinkedIn</span>
                     </a>
                 </div>
@@ -639,8 +843,13 @@
                         <div class="orbit-wrap glass-panel p-6 md:p-8">
                             <div class="orbit-title">Stack & Focus</div>
                             <div class="orbital-visual">
-                                <div class="core-node">
-                                    <span>AP</span>
+                                <div class="core-node" aria-label="Arquitectura de sistemas y computación">
+                                    <svg viewBox="0 0 48 48" aria-hidden="true">
+                                        <rect x="7" y="7" width="34" height="25" rx="3" />
+                                        <path d="M17 41h14M24 32v9M12 37h24" />
+                                        <path d="M15 14h18M15 19h11M15 24h15" />
+                                        <circle cx="35" cy="19" r="1" fill="currentColor" stroke="none" />
+                                    </svg>
                                 </div>
                                 <div class="orbit-node node-1">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
@@ -659,6 +868,25 @@
                                 </div>
                                 <div class="orbit-node node-6">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP" />
+                                </div>
+                            </div>
+
+                            <div class="focus-list">
+                                <div class="focus-item">
+                                    <span class="focus-kicker">Arquitectura</span>
+                                    <strong>Microservicios</strong>
+                                </div>
+                                <div class="focus-item">
+                                    <span class="focus-kicker">Cloud</span>
+                                    <strong>Azure + GCP</strong>
+                                </div>
+                                <div class="focus-item">
+                                    <span class="focus-kicker">Delivery</span>
+                                    <strong>CI/CD</strong>
+                                </div>
+                                <div class="focus-item">
+                                    <span class="focus-kicker">Liderazgo</span>
+                                    <strong>Teams & Strategy</strong>
                                 </div>
                             </div>
                         </div>
@@ -920,30 +1148,45 @@
                     <p class="eyebrow">Clientes y partners</p>
                     <h2>Empresas con las que he trabajado.</h2>
                 </div>
-                <div class="grid md:grid-cols-3 xl:grid-cols-6 gap-5">
-                    <div class="brand-card glass-panel reveal">
-                        <div class="brand-mark" aria-label="MetLife">M</div>
-                        <span>MetLife</span>
-                    </div>
-                    <div class="brand-card glass-panel reveal">
-                        <div class="brand-mark" aria-label="Falabella">F</div>
-                        <span>Falabella</span>
-                    </div>
-                    <div class="brand-card glass-panel reveal">
-                        <div class="brand-mark" aria-label="IKEA">I</div>
-                        <span>IKEA</span>
-                    </div>
-                    <div class="brand-card glass-panel reveal">
-                        <div class="brand-mark" aria-label="Globant">G</div>
-                        <span>Globant</span>
-                    </div>
-                    <div class="brand-card glass-panel reveal">
-                        <div class="brand-mark" aria-label="LATAM">L</div>
-                        <span>LATAM</span>
-                    </div>
-                    <div class="brand-card glass-panel reveal">
-                        <div class="brand-mark" aria-label="Transbank">T</div>
-                        <span>Transbank</span>
+                <div class="brand-carousel reveal">
+                    <div class="brand-track" data-brand-track aria-label="Carrusel automático de empresas y partners">
+                        <div class="brand-track-inner" data-brand-track-inner>
+                        <div class="brand-card glass-panel">
+                            <img src="https://www.google.com/s2/favicons?domain=metlife.com&sz=128" alt="Logo de MetLife" loading="lazy" />
+                            <span class="brand-fallback">ML</span>
+                            <span>MetLife</span>
+                        </div>
+                        <div class="brand-card glass-panel">
+                            <img src="https://www.google.com/s2/favicons?domain=falabella.com&sz=128" alt="Logo de Falabella" loading="lazy" />
+                            <span class="brand-fallback">FB</span>
+                            <span>Falabella</span>
+                        </div>
+                        <div class="brand-card glass-panel">
+                            <img src="https://www.google.com/s2/favicons?domain=ikea.com&sz=128" alt="Logo de IKEA" loading="lazy" />
+                            <span class="brand-fallback">IK</span>
+                            <span>IKEA</span>
+                        </div>
+                        <div class="brand-card glass-panel">
+                            <img src="https://www.google.com/s2/favicons?domain=globant.com&sz=128" alt="Logo de Globant" loading="lazy" />
+                            <span class="brand-fallback">GL</span>
+                            <span>Globant</span>
+                        </div>
+                        <div class="brand-card glass-panel">
+                            <img src="https://www.google.com/s2/favicons?domain=latam.com&sz=128" alt="Logo de LATAM" loading="lazy" />
+                            <span class="brand-fallback">LT</span>
+                            <span>LATAM</span>
+                        </div>
+                        <div class="brand-card glass-panel">
+                            <img src="https://www.google.com/s2/favicons?domain=transbank.cl&sz=128" alt="Logo de Transbank" loading="lazy" />
+                            <span class="brand-fallback">TB</span>
+                            <span>Transbank</span>
+                        </div>
+                        <div class="brand-card glass-panel">
+                            <img src="https://www.google.com/s2/favicons?domain=toku.cl&sz=128" alt="Logo de TOKU" loading="lazy" />
+                            <span class="brand-fallback">TK</span>
+                            <span>TOKU</span>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -955,8 +1198,24 @@
                         <h2>Construyamos soluciones digitales con impacto real.</h2>
                     </div>
                     <div class="cta-actions">
-                        <a href="mailto:aperezbreton@gmail.com" class="primary-btn">aperezbreton@gmail.com</a>
-                        <a href="https://www.linkedin.com/in/alejandro-perez-breton-756459b0" target="_blank" rel="noreferrer" class="secondary-btn">LinkedIn</a>
+                        <a href="mailto:aperezbreton@gmail.com" class="primary-btn" aria-label="Enviar un email a Alejandro Pérez Bretón">
+                            <span class="contact-btn-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.2-.75 6.8 5.18 6.8-5.18H5.2Zm13.05 2.2-5.96 4.54a1 1 0 0 1-1.18 0L5.75 8.2v9.05c0 .41.34.75.75.75h10.99c.41 0 .75-.34.75-.75V8.2Z" /></svg>
+                            </span>
+                            <span class="contact-btn-copy">
+                                <span class="contact-btn-label">Escríbeme</span>
+                                <span class="contact-btn-detail">aperezbreton@gmail.com</span>
+                            </span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alejandro-p%C3%A9rez-bret%C3%B3n-756459b0/" target="_blank" rel="noreferrer" class="secondary-btn" aria-label="Visitar el perfil de LinkedIn de Alejandro Pérez Bretón">
+                            <span class="contact-btn-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1ZM5.5 9.75h2.88v8.75H5.5V9.75Zm4.72 0h2.76v1.2h.04c.38-.72 1.32-1.48 2.72-1.48 2.9 0 3.44 1.9 3.44 4.38v4.65h-2.88v-4.36c0-1.04-.02-2.38-1.45-2.38-1.46 0-1.68 1.14-1.68 2.31v4.43H10.22V9.75Z" /></svg>
+                            </span>
+                            <span class="contact-btn-copy">
+                                <span class="contact-btn-label">Conecta conmigo</span>
+                                <span class="contact-btn-detail">Perfil profesional</span>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -975,6 +1234,21 @@
         }, { threshold: 0.12 });
 
         revealElements.forEach(el => observer.observe(el));
+
+        const brandTrackInner = document.querySelector('[data-brand-track-inner]');
+        const brandCards = Array.from(brandTrackInner.children);
+        brandCards.forEach(card => {
+            const clone = card.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            brandTrackInner.appendChild(clone);
+        });
+
+        document.querySelectorAll('.brand-card img').forEach(image => {
+            image.addEventListener('error', () => {
+                image.hidden = true;
+                image.nextElementSibling.style.display = 'grid';
+            });
+        });
     </script>
 </body>
 </html>
