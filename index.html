@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Pérez Bretón | CV</title>
+    
+    <!-- Fuentes: Inter (Similar a Apple San Francisco) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        apple: {
+                            black: '#000000',
+                            dark: '#1c1c1e',
+                            gray: '#86868b',
+                            light: '#f5f5f7',
+                            blue: '#0a84ff'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #000000;
+            color: #f5f5f7;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Efecto Vidrio Esmerilado (Glassmorphism) */
+        .glass-card {
+            background: rgba(28, 28, 30, 0.5);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #0a84ff, #bf5af2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="selection:bg-apple-blue selection:text-white">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 bg-black/60 backdrop-blur-xl border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-semibold tracking-tight">Alejandro<span class="text-apple-blue">.</span></span>
+            <div class="flex gap-4">
+                <a href="mailto:aperezbreton@gmail.com" class="text-sm font-medium text-apple-light hover:text-apple-blue transition">
+                    <i class="fas fa-envelope mr-1"></i> Email
+                </a>
+                <a href="https://www.linkedin.com/in/alejandro-pérez-bretón-756459b0" target="_blank" class="text-sm font-medium text-apple-light hover:text-apple-blue transition">
+                    <i class="fab fa-linkedin mr-1"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado (Hero) -->
+    <section class="pt-40 pb-20 px-6 max-w-5xl mx-auto text-center flex flex-col items-center">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-xs text-apple-gray mb-8">
+            <i class="fas fa-map-marker-alt"></i> Gran Santiago, Región Metropolitana, Chile
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
+            Ingeniero de Software & <br>
+            <span class="text-gradient">Team Lead.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-apple-gray max-w-3xl mb-10 font-light leading-relaxed">
+            Más de 15 años de experiencia diseñando y modernizando plataformas web. Especialista en 
+            <strong class="text-white font-medium">arquitectura hexagonal (DDD)</strong>, microservicios RESTful y migración a 
+            <strong class="text-white font-medium">Azure Cloud / GCP</strong>. Impulsando el desarrollo con IA (GitHub Copilot) y metodologías ágiles (Scrum/SAFe).
+        </p>
+    </section>
+
+    <!-- Grid de Experiencia Principal (Bento Box) -->
+    <section class="px-6 pb-20 max-w-6xl mx-auto">
+        <h2 class="text-2xl font-semibold mb-8 border-b border-white/10 pb-4">Experiencia Destacada</h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <!-- Imagemaker / MetLife -->
+            <div class="glass-card p-8 lg:col-span-2">
+                <div class="flex flex-col md:flex-row justify-between md:items-center mb-6 gap-4">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white">Team Lead</h3>
+                        <p class="text-apple-blue font-medium mt-1">Imagemaker <span class="text-apple-gray">| Cliente: MetLife Chile</span></p>
+                    </div>
+                    <span class="text-xs bg-white/10 px-3 py-1 rounded-full text-apple-light">Ene 2023 - Presente</span>
+                </div>
+                <h4 class="text-white font-medium mb-3">Migración Hub de Pagos a Digital Payments</h4>
+                <p class="text-sm text-apple-gray leading-relaxed mb-6">
+                    Liderazgo de equipo de 15 personas (Scrum/SAFe) en la migración de sistema legacy cliente-servidor a arquitectura hexagonal en microservicios RESTful. Integración con <strong>TOKU y Transbank</strong>. Orquestación de pagos únicos, recurrentes y batch. Despliegues en <strong>Azure Kubernetes (AKS)</strong>, APIM Gateway y automatización de pipelines CI/CD. Uso intensivo de GitHub Copilot y pruebas unitarias con Mockito.
+                </p>
+                <div class="flex flex-wrap gap-2 text-xs">
+                    <span class="bg-black/50 px-3 py-1.5 rounded-md border border-white/5">Java/Spring Boot</span>
+                    <span class="bg-black/50 px-3 py-1.5 rounded-md border border-white/5">Azure Cloud</span>
+                    <span class="bg-black/50 px-3 py-1.5 rounded-md border border-white/5">GitHub Copilot</span>
+                    <span class="bg-black/50 px-3 py-1.5 rounded-md border border-white/5">Docker</span>
+                </div>
+            </div>
+
+            <!-- Falabella (IKEA) -->
+            <div class="glass-card p-8">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white">Senior Java Software Engineer</h3>
+                        <p class="text-sm text-apple-gray mt-1">Falabella (Integración IKEA)</p>
+                    </div>
+                    <span class="text-xs text-apple-gray">Oct 2021 - Nov 2022</span>
+                </div>
+                <p class="text-sm text-apple-gray leading-relaxed">
+                    Integración para la tienda retail extranjera IKEA interactuando con Tottus, Sodimac y Falabella Retail. Microservicios en Golang y Spring Boot (Postgres). Diseño orientado a eventos en GCP (PubSub, Cloud SQL, Cloud Storage) y desarrollo de componentes ETL con Dataflow. Pipelines en GitLab.
+                </p>
+            </div>
+
+            <!-- Globant (LATAM) -->
+            <div class="glass-card p-8">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white">Senior Java Software Engineer</h3>
+                        <p class="text-sm text-apple-gray mt-1">Globant (LATAM Pass)</p>
+                    </div>
+                    <span class="text-xs text-apple-gray">Ene 2021 - Oct 2021</span>
+                </div>
+                <p class="text-sm text-apple-gray leading-relaxed">
+                    Desarrollo de plataforma Booking para canje de millas LATAM PASS y servicios complementarios. Java 11, Spring Boot, FeignClient y Gradle. Despliegues en Google Cloud y Docker. TDD con Mockito.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Trayectoria Anterior -->
+    <section class="px-6 pb-20 max-w-6xl mx-auto">
+        <h2 class="text-2xl font-semibold mb-8 border-b border-white/10 pb-4">Trayectoria Adicional</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+            
+            <div class="relative pl-6 border-l border-white/10">
+                <span class="absolute w-2 h-2 bg-apple-blue rounded-full -left-[4.5px] top-2"></span>
+                <h3 class="text-white font-medium">BC Tecnología & Huenei IT Services</h3>
+                <p class="text-xs text-apple-gray mb-2">2019 - 2021 | Cliente: Falabella Retail (CL, CO, PE, AR)</p>
+                <p class="text-sm text-apple-gray">APIs RestFul para gestión de Gift Cards. Java 8, Spring Boot, Oracle, MySQL, MyBatis. Azure, GCP, Docker, Kubernetes.</p>
+            </div>
+
+            <div class="relative pl-6 border-l border-white/10">
+                <span class="absolute w-2 h-2 bg-apple-blue rounded-full -left-[4.5px] top-2"></span>
+                <h3 class="text-white font-medium">Emergya</h3>
+                <p class="text-xs text-apple-gray mb-2">2018 - 2019 | Clientes: DIPRES & SII (Gobierno CL)</p>
+                <p class="text-sm text-apple-gray">Sistema web SIAP2 (decretos presupuestarios). J2EE, Spring Boot, Oracle, AngularJS.</p>
+            </div>
+
+            <div class="relative pl-6 border-l border-white/10">
+                <span class="absolute w-2 h-2 bg-apple-gray rounded-full -left-[4.5px] top-2"></span>
+                <h3 class="text-white font-medium">Experiencia Previa (2010 - 2018)</h3>
+                <p class="text-sm text-apple-gray mt-2">
+                    <strong class="text-apple-light">Grupo Alma ITS:</strong> Web Dev (Java MVC, PostgreSQL).<br>
+                    <strong class="text-apple-light">Che Lagarto & Manapro:</strong> PHP Laravel, Bootstrap, C#.Net.<br>
+                    <strong class="text-apple-light">CaribeDeveloper & Planinsa:</strong> Full-Stack PHP MVC, Seguros.<br>
+                    <strong class="text-apple-light">HMO SERVISALUD:</strong> Especialista IT, Core de Seguros HCM (Oracle, Java).
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Educación y Certificaciones -->
+    <section class="px-6 pb-20 max-w-6xl mx-auto">
+        <div class="glass-card p-8 flex flex-col md:flex-row justify-around items-center gap-6 text-center">
+            <div>
+                <i class="fas fa-graduation-cap text-2xl text-apple-blue mb-3"></i>
+                <h3 class="text-white font-medium">Licenciado en Computación</h3>
+                <p class="text-sm text-apple-gray">Universidad Nueva Esparta (2006 - 2012)</p>
+            </div>
+            <div class="h-px w-full md:w-px md:h-12 bg-white/10"></div>
+            <div>
+                <i class="fas fa-certificate text-2xl text-apple-blue mb-3"></i>
+                <h3 class="text-white font-medium">Scrum Foundation (SFPC)</h3>
+                <p class="text-sm text-apple-gray">Professional Certificate</p>
+            </div>
+            <div class="h-px w-full md:w-px md:h-12 bg-white/10"></div>
+            <div>
+                <i class="fas fa-cloud text-2xl text-apple-blue mb-3"></i>
+                <h3 class="text-white font-medium">GCP Fundamentals</h3>
+                <p class="text-sm text-apple-gray">Core Infrastructure</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
