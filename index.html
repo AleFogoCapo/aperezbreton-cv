@@ -1073,6 +1073,8 @@
                                 <span>Pub/Sub</span>
                                 <span>GitLab</span>
                             </div>
+                            <p>Desarrollo de servicios para canje de millas y complementos de viaje, integrando experiencias de booking y servicios adicionales para LATAM Pass utilizando Java 11, Spring Boot, Gradle y Docker.</p>
+                            <div class="tag-list"><span>Java 11</span><span>Feign</span><span>Gradle</span><span>Docker</span><span>Mockito</span></div>
                         </div>
                     </article>
 
@@ -1252,6 +1254,36 @@
                         img.style.display = 'none';
                         if (initial) initial.style.display = 'grid';
                         img.src = 'https://www.google.com/s2/favicons?domain=' + domain + '&sz=128';
+                    });
+                });
+            </script>
+
+            <script>
+                const revealElements = document.querySelectorAll('.reveal');
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.12 });
+                revealElements.forEach(el => observer.observe(el));
+
+                const brandTrackInner = document.querySelector('[data-brand-track-inner]');
+                if (brandTrackInner) {
+                    const brandCards = Array.from(brandTrackInner.children);
+                    brandCards.forEach(card => {
+                        const clone = card.cloneNode(true);
+                        clone.setAttribute('aria-hidden', 'true');
+                        brandTrackInner.appendChild(clone);
+                    });
+                }
+
+                document.querySelectorAll('.brand-card img').forEach(image => {
+                    image.addEventListener('error', () => {
+                        image.hidden = true;
+                        image.nextElementSibling.style.display = 'grid';
                     });
                 });
             </script>
