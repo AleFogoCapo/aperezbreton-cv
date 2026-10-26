@@ -3,13 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alejandro Pérez Bretón | CV</title>
-    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTub00Pbc5K_jijLz6htbn5kSjAC9rk59LtSMU7Mrb0udrJhk2HlCfkB4I&s=10">
+    <title>Alejandro Pérez Bretón | Technical Lead & Cloud Architect</title>
 
-    <!-- Fuentes: Inter (Similar a Apple San Francisco) -->
+    <!-- Metadatos SEO y Motores de Reclutamiento -->
+    <meta name="description" content="Currículum Vitae y Portafolio de Alejandro Pérez Bretón, Technical Lead & Cloud Architect especializado en arquitectura backend, microservicios, ecosistemas cloud (Azure / GCP), DevOps e Inteligencia Artificial.">
+    <meta name="keywords" content="Alejandro Pérez Bretón, Technical Lead, Cloud Architect, Java, Spring Boot, Azure, GCP, Kubernetes, Kafka, Microservicios, Arquitectura Hexagonal, DevOps, Santiago Chile">
+    <meta name="author" content="Alejandro Pérez Bretón">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://aperezbreton.com/">
+
+    <!-- Open Graph (LinkedIn, WhatsApp, Slack) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Alejandro Pérez Bretón - CV">
+    <meta property="og:title" content="Alejandro Pérez Bretón | Technical Lead & Cloud Architect">
+    <meta property="og:description" content="15+ años liderando arquitecturas backend de alta disponibilidad, microservicios, plataformas cloud (Azure / GCP) y adopción estratégica de agentes IA.">
+    <meta property="og:url" content="https://aperezbreton.com/">
+    <meta property="og:locale" content="es_CL">
+    <meta property="og:image" content="https://aperezbreton.com/img-cv/cv-foto-v2.jpeg">
+    <meta property="og:image:alt" content="Alejandro Pérez Bretón - Technical Lead & Cloud Architect">
+    <meta property="profile:first_name" content="Alejandro">
+    <meta property="profile:last_name" content="Pérez Bretón">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://aperezbreton.com/img-cv/cv-foto-v2.jpeg">
+    <meta name="twitter:title" content="Alejandro Pérez Bretón | Technical Lead & Cloud Architect">
+    <meta name="twitter:description" content="15+ años liderando arquitecturas backend de alta disponibilidad, microservicios, plataformas cloud (Azure / GCP) y adopción estratégica de agentes IA.">
+
+    <!-- Favicon SVG Nativo y de Alta Resolución -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23050816'/><text x='50%' y='56%' dominant-baseline='middle' text-anchor='middle' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif' font-weight='900' font-size='38' fill='%236ee7ff'>APB</text></svg>">
+
+    <!-- Tipografía: Inter (Estilo Apple / San Francisco) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -32,18 +59,67 @@
         }
     </script>
 
+    <!-- Datos Estructurados Schema.org (JSON-LD) para Bots de Reclutamiento, ATS y Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://aperezbreton.com/#person",
+          "name": "Alejandro Pérez Bretón",
+          "jobTitle": "Technical Lead & Cloud Architect",
+          "description": "Especialista en arquitectura backend distribuida, microservicios, DevOps, ecosistemas cloud (Azure / GCP) y adopción de agentes de inteligencia artificial.",
+          "url": "https://aperezbreton.com",
+          "email": "mailto:aperezbreton@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santiago",
+            "addressRegion": "Región Metropolitana",
+            "addressCountry": "Chile"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/alejandro-p%C3%A9rez-bret%C3%B3n-756459b0/",
+            "https://github.com/AleFogoCapo"
+          ],
+          "knowsAbout": [
+            "Java", "Spring Boot", "Arquitectura Hexagonal", "Domain-Driven Design (DDD)",
+            "Microservicios REST", "Microsoft Azure", "AKS", "Google Cloud Platform (GCP)",
+            "Kubernetes", "Docker", "Apache Kafka", "Event-Driven Architecture",
+            "Elasticsearch", "CI/CD", "GitHub Copilot", "AI Agents"
+          ],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Imagemaker",
+            "url": "https://imagemaker.com"
+          }
+        },
+        {
+          "@type": "ProfilePage",
+          "@id": "https://aperezbreton.com/#profile",
+          "url": "https://aperezbreton.com",
+          "name": "Alejandro Pérez Bretón - Perfil Profesional y CV",
+          "about": {
+            "@id": "https://aperezbreton.com/#person"
+          }
+        }
+      ]
+    }
+    </script>
+
     <style>
         :root {
             --bg: #050816;
             --bg-soft: #0b1220;
-            --panel: rgba(15, 23, 42, 0.66);
-            --panel-strong: rgba(15, 23, 42, 0.82);
-            --border: rgba(148, 163, 184, 0.18);
+            --panel: rgba(15, 23, 42, 0.68);
+            --panel-strong: rgba(15, 23, 42, 0.85);
+            --border: rgba(148, 163, 184, 0.16);
+            --border-hover: rgba(110, 231, 255, 0.35);
             --text: #edf2ff;
-            --muted: #aab6cf;
+            --muted: #94a3b8;
             --primary: #6ee7ff;
             --secondary: #8b5cf6;
-            --success: #34d399;
+            --accent-green: #34d399;
             --shadow: 0 30px 80px rgba(14, 16, 33, 0.6);
         }
 
@@ -57,10 +133,11 @@
 
         body {
             margin: 0;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background:
-                radial-gradient(circle at top left, rgba(110, 231, 255, 0.12), transparent 28%),
-                radial-gradient(circle at bottom right, rgba(139, 92, 246, 0.12), transparent 30%),
+                radial-gradient(circle at 10% 10%, rgba(110, 231, 255, 0.10), transparent 26%),
+                radial-gradient(circle at 90% 40%, rgba(139, 92, 246, 0.11), transparent 30%),
+                radial-gradient(circle at 50% 90%, rgba(52, 211, 153, 0.08), transparent 35%),
                 var(--bg);
             color: var(--text);
             -webkit-font-smoothing: antialiased;
@@ -80,32 +157,37 @@
         .glass-panel {
             background: var(--panel);
             border: 1px solid var(--border);
-            border-radius: 28px;
-            backdrop-filter: blur(22px);
-            -webkit-backdrop-filter: blur(22px);
+            border-radius: 24px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             box-shadow: var(--shadow);
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .glass-panel:hover {
+            border-color: var(--border-hover);
         }
 
         .bg-orb {
             position: absolute;
-            width: 420px;
-            height: 420px;
+            width: 440px;
+            height: 440px;
             border-radius: 50%;
-            filter: blur(90px);
-            opacity: 0.34;
+            filter: blur(100px);
+            opacity: 0.32;
             pointer-events: none;
         }
 
         .orb-one {
-            top: 60px;
-            left: 8%;
-            background: rgba(34, 211, 238, 0.28);
+            top: 40px;
+            left: 5%;
+            background: rgba(34, 211, 238, 0.24);
         }
 
         .orb-two {
-            right: 10%;
-            top: 200px;
-            background: rgba(168, 85, 247, 0.26);
+            right: 8%;
+            top: 180px;
+            background: rgba(168, 85, 247, 0.22);
         }
 
         .section-head {
@@ -113,20 +195,21 @@
         }
 
         .eyebrow {
-            margin: 0 0 0.6rem;
+            margin: 0 0 0.5rem;
             color: var(--primary);
             text-transform: uppercase;
-            letter-spacing: 0.12em;
+            letter-spacing: 0.14em;
             font-size: 0.72rem;
             font-weight: 700;
         }
 
         .section-head h2 {
             margin: 0;
-            font-size: clamp(2rem, 3vw, 3.2rem);
-            line-height: 1.05;
-            letter-spacing: 0;
+            font-size: clamp(2rem, 3.2vw, 3.2rem);
+            line-height: 1.08;
+            letter-spacing: -0.03em;
             color: white;
+            font-weight: 800;
         }
 
         .tech-pill,
@@ -137,49 +220,67 @@
             align-items: center;
             justify-content: center;
             border-radius: 999px;
-            border: 1px solid rgba(255,255,255,0.09);
-            background: rgba(15, 23, 42, 0.5);
-            color: var(--muted);
-            font-size: 0.76rem;
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            background: rgba(15, 23, 42, 0.6);
+            color: #cbd5e1;
+            font-size: 0.75rem;
             font-weight: 600;
+            transition: all 0.2s ease;
         }
 
         .tech-pill {
-            padding: 0.7rem 1rem;
+            padding: 0.65rem 1rem;
+            background: rgba(15, 23, 42, 0.7);
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .tech-pill:hover {
+            border-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
         }
 
         .mini-chip {
-            padding: 0.65rem 0.8rem;
+            padding: 0.6rem 0.85rem;
         }
 
         .chip-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.7rem;
+            gap: 0.65rem;
         }
 
         .metric-card {
-            background: rgba(15, 23, 42, 0.52);
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 22px;
-            padding: 1.2rem 1rem;
+            background: rgba(15, 23, 42, 0.55);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 1.25rem 1rem;
             text-align: center;
-            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.22);
+            box-shadow: 0 16px 36px rgba(15, 23, 42, 0.25);
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(110, 231, 255, 0.35);
         }
 
         .metric-value {
-            font-size: clamp(1.6rem, 3vw, 2.5rem);
+            font-size: clamp(1.8rem, 3vw, 2.6rem);
             font-weight: 800;
-            letter-spacing: 0;
+            letter-spacing: -0.04em;
             color: white;
+            line-height: 1.1;
         }
 
         .metric-label {
-            margin-top: 0.3rem;
+            margin-top: 0.35rem;
             color: var(--muted);
             font-size: 0.8rem;
+            font-weight: 500;
         }
 
+        /* Orbit Visual */
         .orbit-wrap {
             position: relative;
             min-height: 520px;
@@ -188,23 +289,23 @@
             align-items: center;
             justify-content: center;
             gap: 1.25rem;
-            padding: 1.5rem 1.4rem 1.2rem;
+            padding: 1.75rem 1.4rem 1.4rem;
         }
 
         .orbit-title {
             position: absolute;
-            top: 28px;
+            top: 24px;
             left: 28px;
             font-size: 0.72rem;
-            letter-spacing: 0.12em;
+            letter-spacing: 0.14em;
             text-transform: uppercase;
             color: var(--primary);
             font-weight: 700;
         }
 
         .orbital-visual {
-            width: 340px;
-            height: 340px;
+            width: 320px;
+            height: 320px;
             position: relative;
             margin-top: 0.5rem;
         }
@@ -212,94 +313,94 @@
         .orbital-visual::before {
             content: "";
             position: absolute;
-            inset: 11%;
+            inset: 10%;
             border-radius: 50%;
-            border: 1px solid rgba(148, 163, 184, 0.18);
+            border: 1px solid rgba(148, 163, 184, 0.16);
             box-shadow: inset 0 0 0 1px rgba(110, 231, 255, 0.06), 0 0 40px rgba(96, 165, 250, 0.05);
-            background: radial-gradient(circle at center, rgba(110,231,255,0.04), transparent 60%);
+            background: radial-gradient(circle at center, rgba(110, 231, 255, 0.04), transparent 65%);
         }
 
         .core-node {
             position: absolute;
             inset: 50% auto auto 50%;
-            width: 100px;
-            height: 100px;
+            width: 96px;
+            height: 96px;
             transform: translate(-50%, -50%);
             border-radius: 50%;
-            background: linear-gradient(135deg, #075985, #4c1d95);
-            border: 1px solid rgba(255,255,255,0.12);
+            background: linear-gradient(135deg, #0284c7, #6d28d9);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             display: grid;
             place-items: center;
-            box-shadow: 0 0 30px rgba(110, 231, 255, 0.18), inset 0 1px 0 rgba(255,255,255,0.25);
+            box-shadow: 0 0 35px rgba(110, 231, 255, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.3);
             font-weight: 800;
             color: white;
-            letter-spacing: 0;
             font-size: 1.1rem;
         }
 
         .core-node svg {
-            width: 38px;
-            height: 38px;
+            width: 36px;
+            height: 36px;
             fill: none;
             stroke: currentColor;
             stroke-linecap: round;
             stroke-linejoin: round;
-            stroke-width: 1.35;
+            stroke-width: 1.4;
         }
 
         .orbit-node {
             position: absolute;
-            width: 62px;
-            height: 62px;
+            width: 60px;
+            height: 60px;
             border-radius: 18px;
-            background: rgba(15, 23, 42, 0.88);
-            border: 1px solid rgba(255,255,255,0.08);
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             display: grid;
             place-items: center;
             backdrop-filter: blur(14px);
-            box-shadow: 0 18px 28px rgba(0,0,0,0.22), inset 0 1px 0 rgba(255,255,255,0.08);
+            box-shadow: 0 16px 28px rgba(0, 0, 0, 0.25);
             transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
         }
 
         .orbit-node:hover {
-            border-color: rgba(110, 231, 255, 0.45);
-            box-shadow: 0 20px 34px rgba(0,0,0,0.28), 0 0 20px rgba(110, 231, 255, 0.12);
+            border-color: rgba(110, 231, 255, 0.5);
+            box-shadow: 0 20px 34px rgba(0, 0, 0, 0.3), 0 0 20px rgba(110, 231, 255, 0.16);
+            transform: scale(1.08);
         }
 
         .orbit-node img {
-            width: 26px;
-            height: 26px;
+            width: 28px;
+            height: 28px;
             object-fit: contain;
-            filter: drop-shadow(0 6px 10px rgba(110, 231, 255, 0.12));
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
         }
 
-        .node-1 { top: 12%; left: 50%; transform: translateX(-50%); }
-        .node-2 { top: 38%; right: 6%; }
-        .node-3 { bottom: 12%; left: 50%; transform: translateX(-50%); }
-        .node-4 { top: 38%; left: 6%; }
-        .node-5 { top: 68%; right: 20%; }
-        .node-6 { top: 68%; left: 20%; }
+        .node-1 { top: 10%; left: 50%; transform: translateX(-50%); }
+        .node-2 { top: 38%; right: 4%; }
+        .node-3 { bottom: 10%; left: 50%; transform: translateX(-50%); }
+        .node-4 { top: 38%; left: 4%; }
+        .node-5 { top: 68%; right: 18%; }
+        .node-6 { top: 68%; left: 18%; }
 
         .focus-list {
-            width: min(100%, 360px);
+            width: min(100%, 380px);
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 0.6rem;
+            gap: 0.65rem;
         }
 
         .focus-item {
             display: flex;
             flex-direction: column;
             gap: 0.2rem;
-            padding: 0.82rem 0.9rem;
+            padding: 0.85rem 0.95rem;
             border-radius: 16px;
-            border: 1px solid rgba(255,255,255,0.07);
-            background: rgba(15, 23, 42, 0.42);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(15, 23, 42, 0.45);
         }
 
         .focus-kicker {
             color: var(--primary);
-            font-size: 0.63rem;
+            font-size: 0.65rem;
             letter-spacing: 0.12em;
             text-transform: uppercase;
             font-weight: 700;
@@ -308,9 +409,9 @@
         .focus-item strong {
             color: white;
             font-size: 0.85rem;
-            letter-spacing: 0;
         }
 
+        /* Timeline Section */
         .timeline {
             position: relative;
             padding-left: 0;
@@ -320,44 +421,45 @@
         .timeline::before {
             content: "";
             position: absolute;
-            left: 118px;
+            left: 120px;
             top: 0;
             bottom: 0;
             width: 2px;
-            background: linear-gradient(to bottom, rgba(110,231,255,0.75), rgba(139,92,246,0.75));
+            background: linear-gradient(to bottom, rgba(110, 231, 255, 0.8), rgba(139, 92, 246, 0.8), rgba(52, 211, 153, 0.5));
         }
 
         .timeline-item {
             display: grid;
             grid-template-columns: 150px minmax(0, 1fr);
-            gap: 1.25rem;
-            margin-bottom: 1.25rem;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
             position: relative;
         }
 
         .timeline-item::before {
             content: "";
             position: absolute;
-            left: 110px;
-            top: 20px;
-            width: 16px;
-            height: 16px;
+            left: 112px;
+            top: 24px;
+            width: 18px;
+            height: 18px;
             border-radius: 50%;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
-            box-shadow: 0 0 0 8px rgba(110, 231, 255, 0.08);
-            border: 3px solid rgba(5, 8, 22, 0.9);
+            box-shadow: 0 0 0 7px rgba(110, 231, 255, 0.1);
+            border: 3px solid #050816;
+            z-index: 2;
         }
 
         .timeline-year {
-            padding-top: 18px;
+            padding-top: 22px;
             color: var(--muted);
-            font-size: 0.86rem;
+            font-size: 0.88rem;
             font-weight: 700;
             letter-spacing: 0.04em;
         }
 
         .timeline-card {
-            padding: 1.4rem 1.4rem 1.2rem;
+            padding: 1.6rem 1.6rem 1.4rem;
         }
 
         .timeline-header {
@@ -365,239 +467,163 @@
             justify-content: space-between;
             align-items: center;
             gap: 1rem;
-            margin-bottom: 0.9rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
         }
 
         .company-identity {
             display: flex;
             align-items: center;
-            gap: 0.85rem;
+            gap: 0.9rem;
         }
 
-        .company-identity img {
-            width: 42px;
-            height: 42px;
-            object-fit: contain;
-            padding: 8px;
-            border-radius: 12px;
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.08);
-        }
-
-        /* New: prefer logos inside brand-mark and provide fallback */
-        .brand-mark img.company-logo {
-            display: none;
-            width: 42px;
-            height: 42px;
-            object-fit: contain;
-            padding: 8px;
-            border-radius: 12px;
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.08);
-        }
-
-        .brand-mark .company-initial {
-            width: 42px;
-            height: 42px;
+        .brand-badge,
+        .company-logo-frame {
+            width: 76px;
+            height: 52px;
             border-radius: 12px;
             display: grid;
             place-items: center;
+            flex-shrink: 0;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+        }
+
+        .brand-badge {
             font-weight: 800;
-            color: white;
-            background: linear-gradient(135deg, #4c1d95, #075985);
+            color: #0f172a;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            background: rgba(255, 255, 255, 0.96);
+        }
+
+        .company-logo-frame img {
+            display: block;
+            width: 68px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .client-logo {
+            width: 44px;
+            height: 26px;
+            padding: 3px;
+            border-radius: 6px;
+            background: white;
+            object-fit: contain;
+            flex-shrink: 0;
         }
 
         .company-label {
-            margin: 0 0 0.2rem;
+            margin: 0 0 0.15rem;
             font-size: 0.74rem;
-            color: var(--muted);
-            letter-spacing: 0.04em;
+            color: var(--primary);
+            letter-spacing: 0.06em;
             text-transform: uppercase;
             font-weight: 700;
         }
 
         .timeline-card h3 {
             margin: 0;
-            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            font-size: clamp(1.2rem, 2vw, 1.45rem);
             color: white;
-            letter-spacing: 0;
+            font-weight: 700;
         }
 
         .pill-status {
-            padding: 0.5rem 0.8rem;
+            padding: 0.45rem 0.85rem;
             white-space: nowrap;
-            font-size: 0.7rem;
+            font-size: 0.72rem;
+            background: rgba(110, 231, 255, 0.08);
+            border-color: rgba(110, 231, 255, 0.25);
+            color: var(--primary);
         }
 
         .timeline-card p {
-            color: var(--muted);
-            margin: 0 0 1rem;
-            line-height: 1.8;
-            font-size: 0.98rem;
+            color: #cbd5e1;
+            margin: 0 0 0.9rem;
+            line-height: 1.75;
+            font-size: 0.95rem;
         }
 
         .tag-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.55rem;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
         }
 
         .tag-list span {
-            padding: 0.45rem 0.75rem;
+            padding: 0.4rem 0.75rem;
         }
 
-        .tech-card,
-        .brand-card {
-            padding: 1.3rem 1rem;
+        /* Tech Cards & Bento Features */
+        .tech-card {
+            padding: 1.5rem 1.25rem;
             text-align: center;
-            transition: transform 0.25s ease, border-color 0.25s ease;
-        }
-
-        .social-btn {
-            display: inline-flex;
+            display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            gap: 0.55rem;
-            padding: 0.72rem 0.95rem;
-            border-radius: 999px;
-            border: 1px solid rgba(255,255,255,0.1);
-            background: rgba(255,255,255,0.04);
-            color: var(--text);
-            transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-        }
-
-        .social-btn:hover {
-            transform: translateY(-2px);
-            border-color: rgba(110, 231, 255, 0.35);
-            background: rgba(110, 231, 255, 0.06);
-        }
-
-        .social-btn svg {
-            width: 16px;
-            height: 16px;
-            display: block;
-            fill: currentColor;
-        }
-
-        .nav-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.45rem;
-            transition: color 0.2s ease;
-        }
-
-        .nav-link svg {
-            width: 15px;
-            height: 15px;
-            flex: 0 0 15px;
-            fill: none;
-            stroke: currentColor;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke-width: 1.7;
-            opacity: 0.78;
-        }
-
-        .tech-card:hover,
-        .brand-card:hover,
-        .metric-card:hover,
-        .glass-panel:hover {
-            transform: translateY(-4px);
-            border-color: rgba(110, 231, 255, 0.28);
+            justify-content: flex-start;
         }
 
         .tech-card img {
-            width: 52px;
-            height: 52px;
-            margin: 0 auto 1rem;
-            opacity: 0.95;
-        }
-
-        .tech-card img[alt="GitHub"],
-        .tech-card img[alt="Kafka"] {
-            padding: 7px;
-            background: #ffffff;
-            border: 1px solid #111111;
-            border-radius: 8px;
+            width: 48px;
+            height: 48px;
+            margin-bottom: 1rem;
+            object-fit: contain;
         }
 
         .tech-card h3 {
-            margin: 0 0 0.7rem;
+            margin: 0 0 0.5rem;
             font-size: 1.1rem;
             color: white;
+            font-weight: 700;
         }
 
         .tech-card p {
             margin: 0;
             color: var(--muted);
-            line-height: 1.7;
-            font-size: 0.9rem;
+            line-height: 1.6;
+            font-size: 0.88rem;
         }
 
-        .brand-card {
-            flex: 0 0 clamp(180px, 23vw, 220px);
-            min-height: 148px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 1rem;
-            padding: 1.15rem;
-            scroll-snap-align: start;
-            transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+        /* Architecture Spotlight Card */
+        .arch-spotlight {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.88), rgba(14, 116, 144, 0.16));
+            border: 1px solid rgba(110, 231, 255, 0.25);
+            border-radius: 28px;
+            padding: 2.2rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
         }
 
-        .brand-mark {
-            width: 42px;
-            height: 42px;
-            border-radius: 14px;
-            display: grid;
-            place-items: center;
-            font-size: 0.76rem;
-            font-weight: 800;
-            letter-spacing: 0.08em;
-            color: white;
-            border: 1px solid rgba(255,255,255,0.15);
-            background: linear-gradient(135deg, #0e7490, #4c1d95);
-            box-shadow: inset 0 1px 0 rgba(255,255,255,0.16), 0 12px 24px rgba(15, 23, 42, 0.22);
+        .arch-spotlight::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent-green));
         }
 
-        .brand-card img {
-            width: 52px;
-            height: 52px;
-            object-fit: contain;
-            object-position: left center;
-            filter: saturate(0.92) brightness(1.08);
-        }
-
-        .brand-card > span {
-            color: var(--muted);
-            font-weight: 600;
-            font-size: 0.86rem;
-        }
-
-        .brand-card .brand-fallback {
-            display: none;
-            width: 52px;
-            height: 52px;
-            place-items: center;
-            border-radius: 15px;
-            color: white;
-            font-weight: 800;
-            letter-spacing: 0.05em;
-            background: linear-gradient(135deg, #0e7490, #4c1d95);
-            border: 1px solid rgba(255,255,255,0.14);
-        }
-
+        /* Brand Carousel */
         .brand-carousel {
             position: relative;
+            overflow: hidden;
+            padding: 0.5rem 0 1rem;
         }
 
         .brand-track {
             display: flex;
             gap: 1rem;
             overflow: hidden;
-            padding: 0.35rem 0.1rem 1rem;
+            user-select: none;
+            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
         }
 
         .brand-track-inner {
@@ -605,12 +631,52 @@
             flex: 0 0 auto;
             gap: 1rem;
             width: max-content;
-            animation: brand-marquee 34s linear infinite;
+            animation: brand-marquee 36s linear infinite;
         }
 
-        .brand-track:hover .brand-track-inner,
-        .brand-track:focus-within .brand-track-inner {
+        .brand-track:hover .brand-track-inner {
             animation-play-state: paused;
+        }
+
+        .brand-card {
+            flex: 0 0 190px;
+            min-height: 110px;
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+            padding: 1rem 1.25rem;
+            border-radius: 20px;
+        }
+
+        .brand-card .brand-logo-tile {
+            width: 54px;
+            height: 50px;
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            flex-shrink: 0;
+            padding: 0.35rem;
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .brand-card .brand-logo-tile img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .brand-card-info strong {
+            display: block;
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 700;
+        }
+
+        .brand-card-info span {
+            color: var(--muted);
+            font-size: 0.76rem;
         }
 
         @keyframes brand-marquee {
@@ -618,19 +684,74 @@
             to { transform: translateX(calc(-50% - 0.5rem)); }
         }
 
-        @media (prefers-reduced-motion: reduce) {
-            .brand-track-inner {
-                animation: none;
-            }
+        /* Interactive Buttons & Navbar */
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.55rem 0.95rem;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.05);
+            color: #e2e8f0;
         }
 
+        .nav-btn:hover {
+            border-color: var(--primary);
+            background: rgba(110, 231, 255, 0.1);
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        .nav-btn svg {
+            width: 15px;
+            height: 15px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .btn-pdf {
+            background: linear-gradient(135deg, rgba(110, 231, 255, 0.18), rgba(139, 92, 246, 0.18));
+            border-color: rgba(110, 231, 255, 0.4);
+            color: #6ee7ff;
+        }
+
+        .btn-pdf:hover {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #030712;
+            border-color: transparent;
+            box-shadow: 0 4px 18px rgba(110, 231, 255, 0.35);
+        }
+
+        .nav-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: color 0.2s ease;
+            color: #94a3b8;
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: white;
+        }
+
+        /* CTA Section */
         .cta {
-            padding: 2rem 1.5rem;
+            padding: 2.5rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 1.25rem;
-            background: linear-gradient(135deg, rgba(17, 24, 39, 0.85), rgba(15, 118, 110, 0.16));
+            gap: 1.5rem;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(15, 118, 110, 0.22));
             position: relative;
             overflow: hidden;
         }
@@ -645,15 +766,16 @@
 
         .cta h2 {
             margin: 0;
-            font-size: clamp(1.8rem, 2.5vw, 2.8rem);
-            letter-spacing: 0;
+            font-size: clamp(1.8rem, 2.5vw, 2.6rem);
+            letter-spacing: -0.02em;
             color: white;
+            font-weight: 800;
         }
 
         .cta-actions {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.75rem;
+            gap: 0.85rem;
             justify-content: flex-end;
         }
 
@@ -663,21 +785,49 @@
             align-items: center;
             justify-content: flex-start;
             min-height: 52px;
-            padding: 0.7rem 1rem;
+            padding: 0.75rem 1.25rem;
             border-radius: 16px;
             font-weight: 700;
             transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+            cursor: pointer;
+        }
+
+        .primary-btn {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #02111f;
+            box-shadow: 0 12px 28px rgba(110, 231, 255, 0.25);
+        }
+
+        .primary-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 16px 36px rgba(110, 231, 255, 0.38);
+        }
+
+        .secondary-btn {
+            background: #0f172a;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            color: white;
+        }
+
+        .secondary-btn:hover {
+            border-color: rgba(110, 231, 255, 0.45);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
         }
 
         .contact-btn-icon {
-            width: 38px;
-            height: 38px;
-            flex: 0 0 38px;
+            width: 36px;
+            height: 36px;
+            flex: 0 0 36px;
             display: grid;
             place-items: center;
-            margin-right: 0.7rem;
-            border-radius: 12px;
-            background: rgba(255,255,255,0.16);
+            margin-right: 0.75rem;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .primary-btn .contact-btn-icon {
+            background: rgba(2, 17, 31, 0.15);
         }
 
         .contact-btn-icon svg {
@@ -690,51 +840,55 @@
         .contact-btn-copy {
             display: flex;
             flex-direction: column;
-            gap: 0.12rem;
-            line-height: 1.1;
+            gap: 0.1rem;
+            text-align: left;
         }
 
         .contact-btn-label {
-            font-size: 0.88rem;
+            font-size: 0.9rem;
+            font-weight: 700;
         }
 
         .contact-btn-detail {
-            color: inherit;
-            opacity: 0.68;
-            font-size: 0.67rem;
+            opacity: 0.75;
+            font-size: 0.72rem;
             font-weight: 500;
         }
 
-        .primary-btn {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: #02111f;
-            box-shadow: 0 12px 28px rgba(110,231,255,0.28);
-        }
-
-        .primary-btn .contact-btn-icon {
-            background: rgba(2, 17, 31, 0.16);
-        }
-
-        .secondary-btn {
-            background: #111827;
-            border: 1px solid rgba(255,255,255,0.12);
+        /* Toast Feedback */
+        #copy-toast {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 100;
+            background: #0f172a;
+            border: 1px solid var(--primary);
             color: white;
+            padding: 0.85rem 1.4rem;
+            border-radius: 14px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(110, 231, 255, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.88rem;
+            font-weight: 600;
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+            transition: opacity 0.3s ease, transform 0.3s ease;
         }
 
-        .primary-btn:hover,
-        .secondary-btn:hover {
-            transform: translateY(-2px);
+        #copy-toast.show {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
         }
 
-        .secondary-btn:hover {
-            border-color: rgba(110, 231, 255, 0.42);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.18);
-        }
-
+        /* Reveal Animation */
         .reveal {
             opacity: 0;
-            transform: translateY(24px);
-            transition: opacity 0.7s ease, transform 0.7s ease;
+            transform: translateY(20px);
+            transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .reveal.visible {
@@ -742,41 +896,29 @@
             transform: translateY(0);
         }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-
+        /* Responsive Breakpoints */
         @media (max-width: 900px) {
-            .timeline {
-                position: relative;
-                padding-left: 0;
-            }
-
             .timeline::before {
                 left: 18px;
             }
 
             .timeline-item {
                 grid-template-columns: 1fr;
-                padding-left: 2rem;
+                padding-left: 2.2rem;
             }
 
             .timeline-year {
                 padding-top: 0;
-                padding-left: 0.5rem;
+                padding-left: 0.25rem;
             }
 
             .timeline-item::before {
                 left: 10px;
+                top: 4px;
             }
         }
 
         @media (max-width: 640px) {
-            .orbit-wrap {
-                min-height: 420px;
-            }
-
             .orbital-visual {
                 width: 250px;
                 height: 250px;
@@ -797,44 +939,200 @@
                 width: 100%;
             }
         }
+
+        /* ==========================================
+           PRINT STYLESHEET (ATS & EXECUTIVOS)
+           Optimizada para generar PDF en blanco y negro
+           ========================================== */
+        @media print {
+            @page {
+                margin: 12mm 14mm;
+                size: A4;
+            }
+
+            body {
+                background: #ffffff !important;
+                color: #0f172a !important;
+                font-size: 10pt;
+                line-height: 1.45;
+            }
+
+            .page-shell {
+                min-height: auto;
+            }
+
+            nav,
+            .bg-orb,
+            .orbit-wrap,
+            .brand-carousel,
+            #contacto,
+            #copy-toast,
+            .nav-btn,
+            .cta-actions,
+            #mobile-menu,
+            #mobile-menu-btn {
+                display: none !important;
+            }
+
+            .glass-panel {
+                background: transparent !important;
+                border: none !important;
+                box-shadow: none !important;
+                backdrop-filter: none !important;
+                padding: 0 !important;
+                margin-bottom: 1.5rem !important;
+            }
+
+            .section-head h2 {
+                color: #0f172a !important;
+                font-size: 14pt !important;
+                border-bottom: 2px solid #0f172a;
+                padding-bottom: 4px;
+                margin-bottom: 10px;
+            }
+
+            .eyebrow {
+                color: #475569 !important;
+                font-size: 8pt !important;
+            }
+
+            .timeline::before,
+            .timeline-item::before {
+                display: none !important;
+            }
+
+            .timeline-item {
+                grid-template-columns: 110px 1fr !important;
+                gap: 15px !important;
+                margin-bottom: 16px !important;
+                page-break-inside: avoid;
+            }
+
+            .timeline-year {
+                color: #334155 !important;
+                font-weight: 700 !important;
+                padding-top: 0 !important;
+            }
+
+            .timeline-card {
+                padding: 0 !important;
+            }
+
+            .timeline-card h3 {
+                color: #0f172a !important;
+                font-size: 11pt !important;
+            }
+
+            .company-label {
+                color: #0284c7 !important;
+            }
+
+            .pill-status {
+                border: 1px solid #cbd5e1 !important;
+                color: #334155 !important;
+                background: #f1f5f9 !important;
+            }
+
+            .tag-list span,
+            .tech-pill,
+            .mini-chip {
+                border: 1px solid #94a3b8 !important;
+                background: #f8fafc !important;
+                color: #1e293b !important;
+                font-size: 7.5pt !important;
+                padding: 2px 6px !important;
+            }
+
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+
+            .print-only-header {
+                display: block !important;
+                border-bottom: 2px solid #0f172a;
+                padding-bottom: 12px;
+                margin-bottom: 18px;
+            }
+
+            .print-contact-bar {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 14px;
+                font-size: 8.5pt;
+                color: #334155;
+                margin-top: 6px;
+            }
+        }
+
+        .print-only-header {
+            display: none;
+        }
     </style>
 </head>
 <body class="selection:bg-apple-blue selection:text-white">
+
+    <!-- Toast Notification Flotante para Copiar Correo -->
+    <div id="copy-toast" role="status" aria-live="polite">
+        <svg class="w-5 h-5 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+        <span>Correo copiado al portapapeles: <strong>aperezbreton@gmail.com</strong></span>
+    </div>
+
     <div class="page-shell">
-        <nav class="fixed w-full z-50 bg-black/40 backdrop-blur-2xl border-b border-white/10">
-            <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-                <a href="#top" class="flex items-center gap-3 group">
-                    <span class="w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 via-cyan-400 to-violet-500 flex items-center justify-center text-sm font-bold shadow-lg shadow-blue-500/20">APB</span>
-                    <span class="text-xl font-semibold tracking-tight text-white">Alejandro<span class="text-apple-blue">.</span></span>
+        <!-- Barra de Navegación Sticky con Acciones Rápidas -->
+        <nav class="fixed w-full z-50 bg-black/50 backdrop-blur-2xl border-b border-white/10" aria-label="Navegación principal">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 py-3.5 flex justify-between items-center">
+                <a href="#top" class="flex items-center gap-3 group" aria-label="Inicio - Alejandro Pérez Bretón">
+                    <div class="relative w-9 h-9 rounded-xl p-[1.5px] bg-gradient-to-br from-cyan-400 via-blue-500 to-violet-600 shadow-md shadow-blue-500/20 group-hover:shadow-cyan-400/40 transition-all duration-300 flex-shrink-0 overflow-hidden">
+                        <img src="img-cv/cv-foto-v2.jpeg" alt="Foto de perfil de Alejandro Pérez Bretón" class="w-full h-full object-cover object-[center_18%] rounded-[10px]">
+                    </div>
+                    <span class="text-lg font-bold tracking-tight text-white group-hover:text-cyan-300 transition-colors">Alejandro<span class="text-cyan-400">.</span></span>
                 </a>
-                <div class="hidden md:flex items-center gap-6 text-sm text-slate-300">
-                    <a href="#sobre-mi" class="nav-link hover:text-white" aria-label="Ir a Sobre mí">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3" /><path d="M5.5 20a6.5 6.5 0 0 1 13 0" /></svg>
-                        <span>Sobre mí</span>
-                    </a>
-                    <a href="#experiencia" class="nav-link hover:text-white" aria-label="Ir a Experiencia">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="13" rx="2" /><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M4 12h16M10 12v2h4v-2" /></svg>
-                        <span>Experiencia</span>
-                    </a>
-                    <a href="#tecnologias" class="nav-link hover:text-white" aria-label="Ir a Tecnologías">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" /></svg>
-                        <span>Tecnologías</span>
-                    </a>
-                    <a href="#contacto" class="nav-link hover:text-white" aria-label="Ir a Contacto">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m4 7 8 6 8-6" /></svg>
-                        <span>Contacto</span>
-                    </a>
+
+                <!-- Enlaces Desktop -->
+                <div class="hidden md:flex items-center gap-7 text-sm font-medium">
+                    <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+                    <a href="#arquitectura" class="nav-link">Arquitectura</a>
+                    <a href="#experiencia" class="nav-link">Experiencia</a>
+                    <a href="#tecnologias" class="nav-link">Stack &amp; IA</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
                 </div>
-                <div class="flex gap-3">
-                    <a href="mailto:aperezbreton@gmail.com" class="social-btn text-sm text-slate-200">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.2-.75 6.8 5.18 6.8-5.18H5.2Zm13.05 2.2-5.96 4.54a1 1 0 0 1-1.18 0L5.75 8.2v9.05c0 .41.34.75.75.75h10.99c.41 0 .75-.34.75-.75V8.2Z" /></svg>
-                        <span class="hidden sm:inline">Email</span>
+
+                <!-- Acciones Clave para Reclutadores -->
+                <div class="flex items-center gap-2.5">
+                    <a href="cv-pdf/cv-apb-102026.pdf" download="CV-Alejandro-Perez-Breton.pdf" target="_blank" rel="noopener noreferrer" class="nav-btn btn-pdf" title="Descargar versión PDF del CV" aria-label="Descargar CV en PDF">
+                        <svg viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+                        <span class="hidden sm:inline font-semibold">Descargar PDF</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/alejandro-p%C3%A9rez-bret%C3%B3n-756459b0/" target="_blank" rel="noopener noreferrer" class="social-btn text-sm text-slate-200">
-                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1ZM5.5 9.75h2.88v8.75H5.5V9.75Zm4.72 0h2.76v1.2h.04c.38-.72 1.32-1.48 2.72-1.48 2.9 0 3.44 1.9 3.44 4.38v4.65h-2.88v-4.36c0-1.04-.02-2.38-1.45-2.38-1.46 0-1.68 1.14-1.68 2.31v4.43H10.22V9.75Z" /></svg>
-                        <span class="hidden sm:inline">LinkedIn</span>
+
+                    <button type="button" onclick="copyEmailToClipboard()" class="nav-btn" title="Copiar correo electrónico" aria-label="Copiar correo electrónico">
+                        <svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                        <span class="hidden sm:inline">Copiar Email</span>
+                    </button>
+
+                    <a href="https://www.linkedin.com/in/alejandro-p%C3%A9rez-bret%C3%B3n-756459b0/" target="_blank" rel="noopener noreferrer" class="nav-btn" title="Perfil en LinkedIn" aria-label="Visitar perfil de LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28Z"/></svg>
+                        <span class="hidden lg:inline">LinkedIn</span>
                     </a>
+
+                    <!-- Botón Hamburguesa Móvil -->
+                    <button type="button" id="mobile-menu-btn" class="md:hidden nav-btn p-2" aria-label="Abrir menú de navegación" aria-expanded="false">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
                 </div>
+            </div>
+
+            <!-- Menú Desplegable Móvil -->
+            <div id="mobile-menu" class="hidden md:hidden bg-slate-950/95 border-b border-white/10 px-6 py-4 flex flex-col gap-3">
+                <a href="#sobre-mi" class="nav-link py-1" onclick="closeMobileMenu()">Sobre mí</a>
+                <a href="#arquitectura" class="nav-link py-1" onclick="closeMobileMenu()">Arquitectura</a>
+                <a href="#experiencia" class="nav-link py-1" onclick="closeMobileMenu()">Experiencia</a>
+                <a href="#tecnologias" class="nav-link py-1" onclick="closeMobileMenu()">Tecnologías</a>
+                <a href="#contacto" class="nav-link py-1" onclick="closeMobileMenu()">Contacto</a>
+                <a href="cv-pdf/cv-apb-102026.pdf" download="CV-Alejandro-Perez-Breton.pdf" target="_blank" rel="noopener noreferrer" class="nav-btn btn-pdf w-fit mt-1" onclick="closeMobileMenu()">
+                    <svg viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+                    <span>Descargar CV (PDF)</span>
+                </a>
             </div>
         </nav>
 
@@ -842,97 +1140,149 @@
             <div class="bg-orb orb-one"></div>
             <div class="bg-orb orb-two"></div>
 
+            <!-- Cabecera Exclusiva para Impresión / PDF -->
+            <header class="print-only-header max-w-7xl mx-auto px-6 pt-6">
+                <h1 style="font-size: 22pt; font-weight: 800; margin: 0; color: #0f172a;">Alejandro Pérez Bretón</h1>
+                <p style="font-size: 13pt; font-weight: 700; color: #0284c7; margin: 4px 0 0;">Technical Lead &amp; Cloud Architect</p>
+                <div class="print-contact-bar">
+                    <span>📍 Santiago, Chile</span>
+                    <span>✉️ aperezbreton@gmail.com</span>
+                    <span>🔗 linkedin.com/in/alejandro-pérez-bretón-756459b0</span>
+                    <span>🌐 aperezbreton.com</span>
+                </div>
+            </header>
+
+            <!-- HERO SECTION -->
             <section class="max-w-7xl mx-auto px-6 pt-32 pb-20">
                 <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-10 items-center">
                     <div class="reveal">
-                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-400/20 bg-cyan-500/10 text-xs font-medium text-cyan-200 mb-6">
-                            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-                            Gran Santiago, Chile · Disponible para proyectos estratégicos
+                        <!-- Badge de Disponibilidad -->
+                        <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-cyan-400/30 bg-cyan-500/10 text-xs font-semibold text-cyan-200 mb-6 shadow-sm">
+                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                            Gran Santiago, Chile · Disponible para Liderazgo Técnico &amp; Arquitectura Cloud
                         </div>
 
-                        <div class="glass-panel p-8 md:p-10 mb-8">
-                            <h1 class="text-4xl md:text-6xl font-black tracking-[-0.06em] mb-4 leading-[0.95]">
+                        <!-- Tarjeta Principal Hero -->
+                        <div class="glass-panel p-8 md:p-10 mb-7">
+                            <h1 class="text-[clamp(1rem,4.5vw,3.75rem)] whitespace-nowrap font-black tracking-tight mb-3 leading-[0.98] text-white">
                                 Alejandro Pérez Bretón
                             </h1>
-                            <p class="text-xl md:text-2xl text-slate-300 mb-6">
+                            <h3 class="text-xl sm:text-2xl font-bold text-cyan-200 mb-3">
+                                Technical Lead & Cloud Architect
+                            </h3>
+                            <p class="text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-violet-300 font-bold mb-5">
                                 Technical Lead &amp; Cloud Architect
                             </p>
-                            <p class="text-base md:text-lg text-slate-400 max-w-2xl leading-relaxed">
-                                Especialista en arquitectura backend, microservicios, DevOps y modernización de plataformas 
-                                empresariales con más de 15 años de experiencia liderando equipos y soluciones de alto impacto.
+                            <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+                                Especialista en arquitectura backend distribuida, microservicios de misión crítica,
+                                ecosistemas cloud (Azure / GCP) y adopción estratégica de Inteligencia Artificial
+                                para acelerar ciclos de entrega con alta resiliencia y escalabilidad.
                             </p>
+
+                            <!-- Acciones Rápidas Hero -->
+                            <div class="flex flex-wrap gap-3.5 mt-7">
+                                <a href="cv-pdf/cv-apb-102026.pdf" download="CV-Alejandro-Perez-Breton.pdf" target="_blank" rel="noopener noreferrer" class="primary-btn" aria-label="Descargar CV en PDF">
+                                    <span class="contact-btn-icon">
+                                        <svg viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+                                    </span>
+                                    <span class="contact-btn-copy">
+                                        <span class="contact-btn-label">Descargar CV (PDF)</span>
+                                        <span class="contact-btn-detail">Formato Ejecutivo ATS</span>
+                                    </span>
+                                </a>
+
+                                <button type="button" onclick="copyEmailToClipboard()" class="secondary-btn">
+                                    <span class="contact-btn-icon">
+                                        <svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                                    </span>
+                                    <span class="contact-btn-copy">
+                                        <span class="contact-btn-label">Copiar Correo</span>
+                                        <span class="contact-btn-detail">aperezbreton@gmail.com</span>
+                                    </span>
+                                </button>
+                            </div>
                         </div>
 
-                        <div class="flex flex-wrap gap-3 mb-8">
-                            <span class="tech-pill">Java</span>
-                            <span class="tech-pill">Spring Boot</span>
-                            <span class="tech-pill">Azure</span>
-                            <span class="tech-pill">GCP</span>
-                            <span class="tech-pill">Kubernetes</span>
-                            <span class="tech-pill">Docker</span>
+                        <!-- Pills de Stack Principal -->
+                        <div class="flex flex-wrap gap-2.5 mb-8">
+                            <span class="tech-pill">☕ Java</span>
+                            <span class="tech-pill">🌱 Spring Boot</span>
+                            <span class="tech-pill">☁️ Azure (AKS)</span>
+                            <span class="tech-pill">🌐 GCP</span>
+                            <span class="tech-pill">☸️ Kubernetes</span>
+                            <span class="tech-pill">⚡ Kafka</span>
+                            <span class="tech-pill">🐳 Docker</span>
+                            <span class="tech-pill">🤖 AI Agents</span>
                         </div>
 
-                        <div class="grid sm:grid-cols-3 gap-4 max-w-2xl">
-                            <div class="metric-card reveal">
+                        <!-- Métricas Cuantificables (Bento Grid) -->
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5 max-w-3xl">
+                            <div class="metric-card">
                                 <div class="metric-value">15+</div>
-                                <div class="metric-label">años de experiencia</div>
+                                <div class="metric-label">Años de experiencia</div>
                             </div>
-                            <div class="metric-card reveal">
+                            <div class="metric-card">
                                 <div class="metric-value">15+</div>
-                                <div class="metric-label">personas lideradas</div>
+                                <div class="metric-label">Liderados en equipo</div>
                             </div>
-                            <div class="metric-card reveal">
-                                <div class="metric-value">8</div>
-                                <div class="metric-label">años en cloud</div>
+                            <div class="metric-card">
+                                <div class="metric-value">8+</div>
+                                <div class="metric-label">Años en cloud</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-value">99.9%</div>
+                                <div class="metric-label">Disponibilidad SLA</div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Gráfico Orbital & Enfoque -->
                     <div class="reveal">
-                        <div class="orbit-wrap glass-panel p-6 md:p-8">
-                            <div class="orbit-title">Stack &amp; Focus</div>
-                            <div class="orbital-visual">
+                        <div class="orbit-wrap glass-panel">
+                            <div class="orbit-title">Core Architecture &amp; Stack</div>
+                            <div class="orbital-visual" aria-hidden="true">
                                 <div class="core-node">
-                                    <svg viewBox="0 0 48 48" role="img" aria-label="Arquitectura de sistemas y computación">
+                                    <svg viewBox="0 0 48 48" role="img" aria-label="Arquitectura de sistemas">
                                         <rect x="7" y="7" width="34" height="25" rx="3" />
                                         <path d="M17 41h14M24 32v9M12 37h24" />
                                         <path d="M15 14h18M15 19h11M15 24h15" />
                                         <circle cx="35" cy="19" r="1" fill="currentColor" stroke="none" />
                                     </svg>
                                 </div>
-                                <div class="orbit-node node-1">
+                                <div class="orbit-node node-1" title="Java">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
                                 </div>
-                                <div class="orbit-node node-2">
+                                <div class="orbit-node node-2" title="Spring Boot">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring">
                                 </div>
-                                <div class="orbit-node node-3">
+                                <div class="orbit-node node-3" title="Docker">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
                                 </div>
-                                <div class="orbit-node node-4">
+                                <div class="orbit-node node-4" title="Kubernetes">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes">
                                 </div>
-                                <div class="orbit-node node-5">
+                                <div class="orbit-node node-5" title="Microsoft Azure">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
                                 </div>
-                                <div class="orbit-node node-6">
+                                <div class="orbit-node node-6" title="Google Cloud Platform">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP">
                                 </div>
                             </div>
 
+                            <!-- Herramientas de IA Generativa -->
                             <div class="w-full">
-                                <p class="focus-kicker mb-2 text-center">IA generativa</p>
-                                <div class="flex flex-wrap justify-center gap-2" aria-label="Herramientas de inteligencia artificial">
-                                    <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/70 px-3 py-2 text-xs font-medium text-slate-200">
-                                        <img class="h-5 w-5" src="https://cdn.simpleicons.org/githubcopilot/FFFFFF" alt="">
+                                <p class="focus-kicker mb-2 text-center">IA Generativa &amp; Agentes Integrados</p>
+                                <div class="flex flex-wrap justify-center gap-2">
+                                    <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/80 px-3 py-1.5 text-xs font-medium text-slate-200">
+                                        <img class="h-4 w-4" src="https://cdn.simpleicons.org/githubcopilot/FFFFFF" alt="Copilot">
                                         <span>GitHub Copilot</span>
                                     </div>
-                                    <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/70 px-3 py-2 text-xs font-medium text-slate-200">
-                                        <img class="h-5 w-5" src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="">
+                                    <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/80 px-3 py-1.5 text-xs font-medium text-slate-200">
+                                        <img class="h-4 w-4" src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="Gemini">
                                         <span>Gemini</span>
                                     </div>
-                                    <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/70 px-3 py-2 text-xs font-medium text-slate-200">
-                                        <img class="h-5 w-5" src="https://cdn.simpleicons.org/anthropic/D4A27F" alt="">
+                                    <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/80 px-3 py-1.5 text-xs font-medium text-slate-200">
+                                        <img class="h-4 w-4" src="https://cdn.simpleicons.org/anthropic/D4A27F" alt="Claude">
                                         <span>Claude</span>
                                     </div>
                                 </div>
@@ -941,19 +1291,19 @@
                             <div class="focus-list">
                                 <div class="focus-item">
                                     <span class="focus-kicker">Arquitectura</span>
-                                    <strong>Microservicios - Orientada a Eventos</strong>
+                                    <strong>Hexagonal · Event-Driven</strong>
                                 </div>
                                 <div class="focus-item">
                                     <span class="focus-kicker">Cloud</span>
-                                    <strong>Azure + GCP</strong>
+                                    <strong>Azure AKS + GCP</strong>
                                 </div>
                                 <div class="focus-item">
                                     <span class="focus-kicker">Delivery</span>
-                                    <strong>CI/CD</strong>
+                                    <strong>CI/CD Automatizado</strong>
                                 </div>
                                 <div class="focus-item">
                                     <span class="focus-kicker">Liderazgo</span>
-                                    <strong>Teams &amp; Strategy</strong>
+                                    <strong>Equipos Ágiles &amp; SAFe</strong>
                                 </div>
                             </div>
                         </div>
@@ -961,364 +1311,663 @@
                 </div>
             </section>
 
+            <!-- SECCIÓN SOBRE MÍ -->
             <section id="sobre-mi" class="max-w-7xl mx-auto px-6 pb-20">
                 <div class="section-head reveal">
-                    <p class="eyebrow">Perfil profesional</p>
-                    <h2>Arquitectura, liderazgo y entrega de valor.</h2>
+                    <p class="eyebrow">Perfil Profesional</p>
+                    <h2>Arquitectura sólida, liderazgo y entrega de valor.</h2>
                 </div>
 
-                <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-8">
-                    <div class="glass-panel p-7 md:p-8 reveal">
+                <div class="grid lg:grid-cols-[1.15fr_0.85fr] gap-8">
+                    <div class="glass-panel p-8 md:p-9 reveal">
                         <p class="text-slate-300 leading-relaxed text-lg">
-                            Ingeniero de Software y Team Lead con una sólida trayectoria en el diseño, desarrollo y modernización de plataformas web empresariales. 
-                            Especialista en arquitecturas orientadas a dominio, microservicios REST y soluciones distribuidas con alta disponibilidad en entornos cloud 
-                            con inteligencia artificial y agentes IA.
+                            Ingeniero de Software y <strong>Technical Lead</strong> con una sólida trayectoria en el
+                            diseño, desarrollo y modernización de plataformas empresariales de misión crítica.
+                            Especialista en <strong>arquitecturas orientadas a dominio (DDD)</strong>,
+                            microservicios RESTful desacoplados y soluciones distribuidas de alta disponibilidad en
+                            nubes como <strong>Azure y GCP</strong>.
                         </p>
-                        <p class="text-slate-400 leading-relaxed mt-5">
-                            He liderado equipos multidisciplinarios bajo metodologías ágiles como Scrum y SAFe, 
-                            impulsando migraciones de sistemas legacy hacia ecosistemas más seguros, escalables y mantenibles. 
-                            Con enfoque estratégico, integro backend, DevOps, automatización y calidad de software para acelerar 
-                            la entrega y maximizar el impacto en negocio.
+                        <p class="text-slate-300 leading-relaxed text-lg mt-5">
+                            He liderado equipos multidisciplinarios bajo marcos ágiles como
+                            <strong>Scrum y SAFe</strong>, impulsando migraciones desde ecosistemas
+                            legacy hacia arquitecturas resilientes y escalables. Integro de forma nativa
+                            la <strong>Inteligencia Artificial generativa y agentes autónomos</strong> en los
+                            flujos de ingeniería para elevar la velocidad de entrega, optimizar el pair
+                            programming y robustecer la seguridad del código.
                         </p>
                     </div>
 
-                    <div class="glass-panel p-7 md:p-8 reveal">
-                        <div class="chip-grid">
-                            <span class="mini-chip">DDD</span>
-                            <span class="mini-chip">Microservicios</span>
-                            <span class="mini-chip">CI/CD</span>
-                            <span class="mini-chip">GitHub Copilot</span>
-                            <span class="mini-chip">Kubernetes</span>
-                            <span class="mini-chip">APIs REST</span>
-                            <span class="mini-chip">Kafka</span>
-                            <span class="mini-chip">JPA/Hibernate</span>
-                            <span class="mini-chip">MyBatis</span>
-                            <span class="mini-chip">Oracle</span>
-                            <span class="mini-chip">MySQL</span>
-                            <span class="mini-chip">PostgreSQL</span>
+                    <div class="glass-panel p-8 md:p-9 reveal flex flex-col justify-between">
+                        <div>
+                            <p class="focus-kicker mb-3">Competencias Técnicas Principales</p>
+                            <div class="chip-grid">
+                                <span class="mini-chip">Arquitectura Hexagonal</span>
+                                <span class="mini-chip">Domain-Driven Design (DDD)</span>
+                                <span class="mini-chip">Microservicios REST</span>
+                                <span class="mini-chip">Kubernetes (AKS)</span>
+                                <span class="mini-chip">Apache Kafka</span>
+                                <span class="mini-chip">Azure API Management</span>
+                                <span class="mini-chip">CI/CD Pipelines</span>
+                                <span class="mini-chip">Elasticsearch (Observabilidad)</span>
+                                <span class="mini-chip">JPA / Hibernate / MyBatis</span>
+                                <span class="mini-chip">Bases de datos SQL &amp; NoSQL</span>
+                                <span class="mini-chip">Pruebas con JUnit, Mockito y k6</span>
+                                <span class="mini-chip">Pair Programming con IA</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-5 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+                            <span>Metodologías: <strong>SAFe, Scrum, Agile</strong></span>
+                            <span>Enfoque: <strong>Escalabilidad y Seguridad</strong></span>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <!-- SECCIÓN ARCHITECTURE SPOTLIGHT (Caso de Éxito Técnico) -->
+            <section id="arquitectura" class="max-w-7xl mx-auto px-6 pb-20">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Architecture Spotlight</p>
+                    <h2>Caso de Éxito: Migración del Hub de Pagos a Digital Payments AKS (MetLife)</h2>
+                </div>
+
+                <div class="arch-spotlight reveal">
+                    <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-8 items-center">
+                        <div>
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-400/25 text-xs text-cyan-300 font-semibold mb-4">
+                                🚀 Liderazgo Técnico &amp; Arquitectura de Sistemas
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-4">
+                                De Monolito Legacy Hub de Pagos Hexagonal a AKS Digital Payments
+                            </h3>
+                            <p class="text-slate-300 leading-relaxed mb-4">
+                                Lideré la concepción arquitectónica y ejecución técnica para migrar el sistema de
+                                pagos hacia una arquitectura de microservicios basada en <strong>Spring Boot 3 y
+                                arquitectura hexagonal (Ports &amp; Adapters)</strong>. Esto desacopló la lógica de
+                                negocio de los proveedores externos de pagos (<strong>TOKU, Transbank</strong>),
+                                garantizando tolerancia a fallos y alta escalabilidad transaccional.
+                            </p>
+                            <p class="text-slate-300 leading-relaxed mb-6">
+                                La solución implementó <strong>Azure Kubernetes Service (AKS)</strong>, <strong>Azure API
+                                Management</strong> para gobierno de endpoints seguros, y centralización de logs y
+                                métricas con <strong>Elasticsearch</strong> para trazabilidad end-to-end de cada
+                                transacción financiera.
+                            </p>
+
+                            <div class="grid sm:grid-cols-3 gap-3 pt-4 border-t border-white/10">
+                                <div>
+                                    <div class="text-xl font-bold text-white">Zero Downtime</div>
+                                    <div class="text-xs text-slate-400">Despliegue sin corte de servicio</div>
+                                </div>
+                                <div>
+                                    <div class="text-xl font-bold text-cyan-400">Observabilidad</div>
+                                    <div class="text-xs text-slate-400">Monitoreo transaccional Elasticsearch</div>
+                                </div>
+                                <div>
+                                    <div class="text-xl font-bold text-violet-400">AI-Assisted</div>
+                                    <div class="text-xs text-slate-400">Agentes para calidad y seguridad</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Diagrama Lógico de Flujo Arquitectural -->
+                        <div class="glass-panel p-6 bg-slate-900/80 border-cyan-500/20">
+                            <p class="text-xs font-bold text-cyan-400 uppercase tracking-widest mb-4">Flujo Arquitectónico</p>
+                            <div class="space-y-3 text-xs">
+                                <div class="p-3 rounded-xl bg-slate-800/90 border border-white/10 flex items-center justify-between">
+                                    <span class="font-semibold text-white">Canales &amp; Aplicaciones Clientes</span>
+                                    <span class="text-slate-400">Web / Móvil / Portales</span>
+                                </div>
+                                <div class="flex justify-center text-cyan-400">↓ HTTPS / JWT Auth</div>
+                                <div class="p-3 rounded-xl bg-cyan-950/40 border border-cyan-400/30 flex items-center justify-between">
+                                    <span class="font-semibold text-cyan-200">Azure API Management (APIM)</span>
+                                    <span class="text-cyan-400/80">Rate Limiting &amp; Policies</span>
+                                </div>
+                                <div class="flex justify-center text-cyan-400">↓ Ingress Controller</div>
+                                <div class="p-3 rounded-xl bg-slate-800/90 border border-white/10 flex items-center justify-between">
+                                    <span class="font-semibold text-white">Azure Kubernetes Service (AKS)</span>
+                                    <span class="text-slate-400">Microservicios Hexagonales</span>
+                                </div>
+                                <div class="flex justify-center text-cyan-400">↓ Eventos &amp; Gateways</div>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div class="p-2.5 rounded-lg bg-slate-800/60 border border-white/10 text-center">
+                                        <div class="font-bold text-slate-200">Transbank / TOKU</div>
+                                        <div class="text-[10px] text-slate-400">Pasarelas de Pago</div>
+                                    </div>
+                                    <div class="p-2.5 rounded-lg bg-slate-800/60 border border-white/10 text-center">
+                                        <div class="font-bold text-slate-200">Elasticsearch</div>
+                                        <div class="text-[10px] text-slate-400">Auditoría &amp; Logs</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN EXPERIENCIA PROFESIONAL -->
             <section id="experiencia" class="max-w-7xl mx-auto px-6 pb-20">
                 <div class="section-head reveal">
-                    <p class="eyebrow">Experiencia</p>
-                    <h2>Línea de tiempo profesional</h2>
+                    <p class="eyebrow">Trayectoria Profesional</p>
+                    <h2>Línea de tiempo de impacto y liderazgo</h2>
                 </div>
 
                 <div class="timeline">
+                    <!-- Experiencia 1: Imagemaker / MetLife -->
                     <article class="timeline-item reveal">
                         <div class="timeline-year">2023 — Presente</div>
                         <div class="timeline-card glass-panel">
                             <div class="timeline-header">
                                 <div class="company-identity">
-                                    <div class="brand-mark">
-                                        <img class="company-logo" alt="">
-                                        <div class="company-initial">M</div>
+                                    <div class="company-logo-frame">
+                                        <img src="img-cv/logos/imagemaker.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
                                     </div>
                                     <div>
                                         <p class="company-label">Imagemaker</p>
-                                        <h3>Team Lead</h3>
+                                        <h3>Team Lead &amp; Software Architect</h3>
                                     </div>
                                 </div>
-                                <span class="pill-status">Cliente: MetLife Chile</span>
+                                <span class="pill-status"><img class="client-logo" src="img-cv/logos/metlife.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">Cliente: MetLife Chile</span>
                             </div>
                             <p>
-                                Lideré equipo técnico de la migración del Hub de Pagos hacia Digital Payments. Diseño e implementación de arquitectura 
-                                hexagonal en microservicios RESTful, integración con TOKU y Transbank, automatización de pagos y despliegues en 
-                                Azure Kubernetes con API Gateway Management.
+                                Liderazgo del equipo de ingeniería en la modernización y migración del Hub de Pagos
+                                hacia una plataforma de pagos digitales resiliente. Diseño e implementación de
+                                arquitectura hexagonal en microservicios RESTful desacoplados, integración de
+                                pasarelas de pago (TOKU y Transbank) y orquestación de despliegues en
+                                Azure Kubernetes Service (AKS) con API Gateway Management.
                             </p>
                             <p>
-                                Integré Inteligencia Artificial (GitHub Copilot y agentes de IA en IDEs) para pair programming, 
-                                generación de código, resolución de tareas complejas y mitigación de vulnerabilidades de seguridad. 
-                                Asi como el uso y creacion de Agentes analíticos 
-                                para creacion de Microservicios y verificacion de lógicas de código de programación.
-                            </p>
-                            <p>
-                                Implementé Elasticsearch para el monitoreo transaccional, asegurando la observabilidad y alta disponibilidad de la plataforma de pagos.
+                                Integración pionera de Inteligencia Artificial (GitHub Copilot, Gemini y
+                                agentes autónomos de análisis en IDEs) para pair programming continuo,
+                                refactorización asistida y mitigación proactiva de vulnerabilidades de seguridad.
+                                Implementación de Elasticsearch para trazabilidad y observabilidad transaccional
+                                en tiempo real.
                             </p>
                             <div class="tag-list">
-                                <span>Java</span>
-                                <span>Spring Boot</span>
-                                <span>Azure</span>
-                                <span>AKS</span>
+                                <span>Java 17</span>
+                                <span>Spring Boot 3</span>
+                                <span>Arquitectura Hexagonal</span>
+                                <span>Azure AKS</span>
+                                <span>Azure APIM</span>
+                                <span>Elasticsearch</span>
                                 <span>GitHub Copilot</span>
+                                <span>TOKU / Transbank</span>
                             </div>
                         </div>
                     </article>
 
+                    <!-- Experiencia 2: Falabella / IKEA -->
                     <article class="timeline-item reveal">
                         <div class="timeline-year">2021 — 2022</div>
                         <div class="timeline-card glass-panel">
                             <div class="timeline-header">
                                 <div class="company-identity">
-                                    <div class="brand-mark">
-                                        <img class="company-logo" alt="">
-                                        <div class="company-initial">F</div>
+                                    <div class="company-logo-frame">
+                                        <img src="img-cv/logos/falabella.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">
                                     </div>
                                     <div>
                                         <p class="company-label">Falabella</p>
                                         <h3>Senior Java Software Engineer</h3>
                                     </div>
                                 </div>
-                                <span class="pill-status">Integración IKEA</span>
+                                <span class="pill-status"><img class="client-logo" src="img-cv/logos/ikea.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">Integración Internacional IKEA</span>
                             </div>
-                            <p>Desarrollo de microservicios y solución orientada a eventos para la integración retail internacional. 
-                                Diseño con GCP, Pub/Sub, Cloud SQL, Cloud Functions, Cloud Storage y ETL con Dataflow.</p>
+                            <p>
+                                Diseño y desarrollo de microservicios de alto rendimiento y soluciones
+                                orientadas a eventos (EDA) para soportar la integración logística y
+                                transaccional retail internacional con IKEA.
+                            </p>
+                            <p>
+                                Arquitectura serverless y streaming sobre Google Cloud Platform (GCP)
+                                utilizando Pub/Sub, Cloud Functions, Cloud SQL, Cloud Storage y
+                                canalizaciones de procesamiento ETL distribuido con Apache Dataflow.
+                            </p>
                             <div class="tag-list">
-                                <span>Golang</span>
+                                <span>Java</span>
                                 <span>Spring Boot</span>
-                                <span>GCP</span>
-                                <span>Pub/Sub</span>
-                                <span>GitLab</span>
+                                <span>Golang</span>
+                                <span>GCP Pub/Sub</span>
+                                <span>Dataflow (ETL)</span>
+                                <span>Cloud SQL</span>
+                                <span>GitLab CI/CD</span>
                             </div>
-                            <p>Desarrollo de servicios para canje de millas y complementos de viaje, integrando experiencias de booking y servicios adicionales para LATAM Pass utilizando Java 11, Spring Boot, Gradle y Docker.</p>
-                            <div class="tag-list"><span>Java 11</span><span>Feign</span><span>Gradle</span><span>Docker</span><span>Mockito</span></div>
                         </div>
                     </article>
 
+                    <!-- Experiencia 3: Globant / LATAM -->
                     <article class="timeline-item reveal">
                         <div class="timeline-year">2021</div>
                         <div class="timeline-card glass-panel">
                             <div class="timeline-header">
                                 <div class="company-identity">
-                                    <div class="brand-mark"><img class="company-logo" alt=""><div class="company-initial">G</div></div>
-                                    <div><p class="company-label">Globant</p><h3>Senior Java Software Engineer</h3></div>
+                                    <div class="company-logo-frame">
+                                        <img src="img-cv/logos/globant.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">
+                                    </div>
+                                    <div>
+                                        <p class="company-label">Globant</p>
+                                        <h3>Senior Java Software Engineer</h3>
+                                    </div>
                                 </div>
-                                <span class="pill-status">LATAM Pass</span>
+                                <span class="pill-status"><img class="client-logo" src="img-cv/logos/latam.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">Cliente: LATAM Airlines (LATAM Pass)</span>
                             </div>
-                            <p>Desarrollo de servicios para canje de millas y complementos de viaje, 
-                                integrando experiencias de booking y servicios adicionales para LATAM Pass utilizando Java 11, Spring Boot, Gradle y Docker.</p>
-                            <div class="tag-list"><span>Java 11</span><span>Feign</span><span>Gradle</span><span>Docker</span><span>Mockito</span></div>
+                            <p>
+                                Desarrollo y escalamiento de microservicios para el canje de millas y
+                                compra de complementos de viaje en la plataforma LATAM Pass. Integración
+                                de flujos de booking internacional y personalización de servicios auxiliares
+                                con Java 11, Spring Boot, Feign Clients, Gradle y contenedores
+                                Docker bajo estrictos estándares de calidad con Mockito.
+                            </p>
+                            <div class="tag-list">
+                                <span>Java 11</span>
+                                <span>Spring Boot</span>
+                                <span>Feign</span>
+                                <span>Gradle</span>
+                                <span>Docker</span>
+                                <span>Mockito</span>
+                                <span>APIs REST</span>
+                            </div>
                         </div>
                     </article>
 
+                    <!-- Experiencia 4: BC Tecnología / Falabella Retail -->
                     <article class="timeline-item reveal">
                         <div class="timeline-year">2019 — 2021</div>
                         <div class="timeline-card glass-panel">
                             <div class="timeline-header">
                                 <div class="company-identity">
-                                    <div class="brand-mark"><img class="company-logo" alt=""><div class="company-initial">BC</div></div>
-                                    <div><p class="company-label">BC Tecnología</p><h3>Desarrollador Java Senior</h3></div>
+                                    <div class="company-logo-frame">
+                                        <img src="img-cv/logos/bctecnologia.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+                                    </div>
+                                    <div>
+                                        <p class="company-label">BC Tecnología</p>
+                                        <h3>Desarrollador Java Senior</h3>
+                                    </div>
                                 </div>
-                                <span class="pill-status">Cliente: Falabella Retail</span>
+                                <span class="pill-status"><img class="client-logo" src="img-cv/logos/falabella.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">Cliente: Falabella Retail</span>
                             </div>
-                            <p>Desarrollo de microservicios y APIs REST para gestión de Gift Cards, con enfoque en calidad, pruebas unitarias y despliegues en Azure y GCP.</p>
-                            <div class="tag-list"><span>Java 8</span><span>Spring Boot</span><span>Oracle</span><span>MyBatis</span><span>Kubernetes</span></div>
+                            <p>
+                                Desarrollo y optimización de microservicios y APIs REST para la gestión integral
+                                de Gift Cards y fidelización retail. Implementación de capas de persistencia de
+                                alto tráfico con MyBatis y bases de datos Oracle, junto con despliegues automatizados
+                                en entornos Kubernetes sobre Microsoft Azure y Google Cloud.
+                            </p>
+                            <div class="tag-list">
+                                <span>Java 8/11</span>
+                                <span>Spring Boot</span>
+                                <span>Oracle DB</span>
+                                <span>MyBatis</span>
+                                <span>Kubernetes</span>
+                                <span>Azure &amp; GCP</span>
+                            </div>
                         </div>
                     </article>
 
+                    <!-- Experiencia 5: Emergya / Sector Público -->
                     <article class="timeline-item reveal">
                         <div class="timeline-year">2018 — 2019</div>
                         <div class="timeline-card glass-panel">
                             <div class="timeline-header">
                                 <div class="company-identity">
-                                    <div class="brand-mark"><img class="company-logo" alt=""><div class="company-initial">E</div></div>
-                                    <div><p class="company-label">Emergya</p><h3>Desarrollador de Software en Java</h3></div>
+                                    <div class="company-logo-frame">
+                                        <img src="img-cv/logos/emergya.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">
+                                    </div>
+                                    <div>
+                                        <p class="company-label">Emergya</p>
+                                        <h3>Desarrollador de Software Java</h3>
+                                    </div>
                                 </div>
-                                <span class="pill-status">DIPRES / SII</span>
+                                <span class="pill-status">Clientes: DIPRES / SII (Gobierno de Chile)</span>
                             </div>
-                            <p>Desarrollo de solución web para presupuesto nacional y sistemas gubernamentales bajo tecnologías J2EE, 
-                                Spring Boot, Oracle y AngularJS, con servicio RESTful y MVC.</p>
-                            <div class="tag-list"><span>J2EE</span><span>Spring</span><span>Oracle</span><span>AngularJS</span></div>
+                            <p>
+                                Desarrollo y mantenimiento de soluciones web gubernamentales críticas para el
+                                Presupuesto Nacional de Chile en la Dirección de Presupuestos (DIPRES) y el
+                                Servicio de Impuestos Internos (SII), bajo estándares J2EE, Spring MVC,
+                                Oracle y frontend interactivo.
+                            </p>
+                            <div class="tag-list">
+                                <span>Java EE / Spring</span>
+                                <span>Oracle</span>
+                                <span>AngularJS</span>
+                                <span>Seguridad Gubernamental</span>
+                            </div>
                         </div>
                     </article>
 
+                    <!-- Experiencia 6: Trayectoria Previa -->
                     <article class="timeline-item reveal">
                         <div class="timeline-year">2010 — 2018</div>
                         <div class="timeline-card glass-panel">
                             <div class="timeline-header">
                                 <div class="company-identity">
-                                    <div class="brand-mark"><img class="company-logo" alt=""><div class="company-initial">A</div></div>
-                                    <div><p class="company-label">Trayectoria previa</p><h3>Full Stack &amp; Web Developer</h3></div>
+                                    <div class="brand-badge" style="background: linear-gradient(135deg, #475569, #334155);">8Y</div>
+                                    <div>
+                                        <p class="company-label">Trayectoria previa de consolidación</p>
+                                        <h3>Full Stack &amp; Software Developer</h3>
+                                    </div>
                                 </div>
-                                <span class="pill-status">Diversos clientes</span>
+                                <span class="pill-status">Sectores: Banca, Seguros y Retail</span>
                             </div>
-                            <p>Participación en proyectos de seguros, banca, retail, hostelería y soluciones empresariales con PHP, Laravel, Java MVC, Bootstrap, Oracle, MySQL y tecnologías web modernas.</p>
-                            <div class="tag-list"><span>PHP</span><span>Laravel</span><span>Java MVC</span><span>Oracle</span><span>Bootstrap</span></div>
+                            <p>
+                                8 años de trayectoria inicial participando en proyectos integrales en banca,
+                                aseguradoras y soluciones empresariales con Java MVC, PHP, Laravel, MySQL,
+                                bases de datos relacionales y diseño de software web robusto.
+                            </p>
+                            <div class="tag-list">
+                                <span>Java MVC</span>
+                                <span>PHP / Laravel</span>
+                                <span>MySQL / Oracle</span>
+                                <span>Arquitectura Web</span>
+                            </div>
                         </div>
                     </article>
-
                 </div>
             </section>
 
+            <!-- SECCIÓN TECNOLOGÍAS & HERRAMIENTAS -->
             <section id="tecnologias" class="max-w-7xl mx-auto px-6 pb-20">
-                <div class="section-head reveal"><p class="eyebrow">Tecnologías</p><h2>Stack profesional con enfoque en rendimiento y escalabilidad.</h2></div>
-                <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-                    <div class="tech-card glass-panel reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-                        <h3>Backend Core</h3><p>Java, Spring Boot, JPA/Hibernate, MyBatis, REST APIs.</p></div>
-                    <div class="tech-card glass-panel reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
-                        <h3>DevOps</h3><p>Docker, Kubernetes, CI/CD, GitHub, GitLab, Azure DevOps.</p></div>
-                    <div class="tech-card glass-panel reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
-                        <h3>Cloud &amp; Platform</h3><p>Azure API Management, AKS, Azure Database, cloud migration.</p></div>
-                    <div class="tech-card glass-panel reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud">
-                        <h3>Cloud &amp; Data</h3><p>GCP, Pub/Sub, Cloud SQL, Cloud Storage, Dataflow.</p></div>
-                    <div class="tech-card glass-panel reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka">
-                        <h3>Streaming &amp; Integración</h3><p>Kafka, event-driven architecture, integración de eventos.</p></div>
-                    <div class="tech-card glass-panel reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-                        <h3>Productividad</h3><p>GitHub Copilot, IA aplicada a desarrollo, refactorización y tests.</p></div>
-                    <div class="tech-card glass-panel reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-                        <h3>Frontend &amp; Entornos</h3><p>React, Node.js, Linux, automatización de despliegues.</p></div>
-                    <div class="tech-card glass-panel reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" alt="Testing">
-                        <h3>Calidad</h3><p>JUnit, Mockito, TDD, k6, performance testing y QA continua.</p></div>
-                </div>
-            </section>
-
-            <section id="ia-aplicada" class="max-w-7xl mx-auto px-6 pb-20">
                 <div class="section-head reveal">
-                    <p class="eyebrow">IA aplicada y observabilidad</p>
-                    <h2>Inteligencia artificial integrada al ciclo de desarrollo.</h2>
+                    <p class="eyebrow">Stack Tecnológico</p>
+                    <h2>Ecosistema profesional enfocado en rendimiento y escalabilidad</h2>
                 </div>
-                <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-                    <article class="tech-card glass-panel reveal">
-                        <h3>Asistentes de IA</h3>
-                        <p>Uso de GitHub Copilot, Gemini y Claude como apoyo en programación y pair programming.</p>
-                    </article>
-                    <article class="tech-card glass-panel reveal">
-                        <h3>Agentes de desarrollo</h3>
-                        <p>Agentes aplicados a tareas de refactorización y programación, con revisión de los cambios propuestos.</p>
-                    </article>
-                    <article class="tech-card glass-panel reveal">
-                        <h3>Mitigación de vulnerabilidades</h3>
-                        <p>Uso de herramientas de IA para apoyar la detección, análisis y mitigación de vulnerabilidades en el código.</p>
-                    </article>
-                    <article class="tech-card glass-panel reveal">
-                        <h3>Monitoreo de microservicios</h3>
-                        <p>Uso de Elasticsearch para centralizar logs y monitorear el comportamiento de microservicios.</p>
-                    </article>
-                </div>
-            </section>
 
-            <section class="max-w-7xl mx-auto px-6 pb-20">
-                <div class="section-head reveal"><p class="eyebrow">Clientes y partners</p><h2>Empresas con las que he trabajado.</h2></div>
-                <section class="brand-carousel reveal" aria-label="Clientes y partners">
-                    <section class="brand-track" data-brand-track aria-label="Carrusel automático de empresas y partners">
-                        <div class="brand-track-inner" data-brand-track-inner>
-                            <div class="brand-card glass-panel"><img src="https://www.google.com/s2/favicons?domain=metlife.com&sz=128" alt="Logo de MetLife" loading="lazy"><span class="brand-fallback">ML</span><span>MetLife</span></div>
-                            <div class="brand-card glass-panel"><img src="https://www.google.com/s2/favicons?domain=falabella.com&sz=128" alt="Logo de Falabella" loading="lazy"><span class="brand-fallback">FB</span><span>Falabella</span></div>
-                            <div class="brand-card glass-panel"><img src="https://www.google.com/s2/favicons?domain=ikea.com&sz=128" alt="Logo de IKEA" loading="lazy"><span class="brand-fallback">IK</span><span>IKEA</span></div>
-                            <div class="brand-card glass-panel"><img src="https://www.google.com/s2/favicons?domain=globant.com&sz=128" alt="Logo de Globant" loading="lazy"><span class="brand-fallback">GL</span><span>Globant</span></div>
-                            <div class="brand-card glass-panel"><img src="https://www.google.com/s2/favicons?domain=latam.com&sz=128" alt="Logo de LATAM" loading="lazy"><span class="brand-fallback">LT</span><span>LATAM</span></div>
-                            <div class="brand-card glass-panel"><img src="https://www.google.com/s2/favicons?domain=transbank.cl&sz=128" alt="Logo de Transbank" loading="lazy"><span class="brand-fallback">TB</span><span>Transbank</span></div>
-                            <div class="brand-card glass-panel"><img src="https://www.google.com/s2/favicons?domain=toku.cl&sz=128" alt="Logo de TOKU" loading="lazy"><span class="brand-fallback">TK</span><span>TOKU</span></div>
-                        </div>
-                    </section>
-                </section>
-            </section>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div class="tech-card glass-panel reveal">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                        <h3>Backend Core</h3>
+                        <p>Java (8 a 21), Spring Boot, Arquitectura Hexagonal, DDD, APIs RESTful, JPA/Hibernate, MyBatis.</p>
+                    </div>
 
-            <section id="contacto" class="max-w-5xl mx-auto px-6 pb-24">
-                <div class="cta glass-panel reveal">
-                    <div><p class="eyebrow">Contacto</p><h2>Construyamos soluciones digitales con impacto real.</h2></div>
-                    <div class="cta-actions">
-                        <a href="mailto:aperezbreton@gmail.com" class="primary-btn" aria-label="Enviar un email a Alejandro Pérez Bretón"><span class="contact-btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.2-.75 6.8 5.18 6.8-5.18H5.2Zm13.05 2.2-5.96 4.54a1 1 0 0 1-1.18 0L5.75 8.2v9.05c0 .41.34.75.75.75h10.99c.41 0 .75-.34.75-.75V8.2Z" /></svg></span><span class="contact-btn-copy"><span class="contact-btn-label">Escríbeme</span><span class="contact-btn-detail">aperezbreton@gmail.com</span></span></a>
-                        <a href="https://www.linkedin.com/in/alejandro-p%C3%A9rez-bret%C3%B3n-756459b0/" target="_blank" rel="noopener noreferrer" class="secondary-btn" aria-label="Visitar el perfil de LinkedIn de Alejandro Pérez Bretón"><span class="contact-btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1ZM5.5 9.75h2.88v8.75H5.5V9.75Zm4.72 0h2.76v1.2h.04c.38-.72 1.32-1.48 2.72-1.48 2.9 0 3.44 1.9 3.44 4.38v4.65h-2.88v-4.36c0-1.04-.02-2.38-1.45-2.38-1.46 0-1.68 1.14-1.68 2.31v4.43h-2.88V9.75Z" /></svg></span><span class="contact-btn-copy"><span class="contact-btn-label">Conecta conmigo</span><span class="contact-btn-detail">Perfil profesional</span></span></a>
+                    <div class="tech-card glass-panel reveal">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                        <h3>DevOps &amp; Infra</h3>
+                        <p>Docker, Kubernetes (AKS), CI/CD con GitHub Actions, GitLab CI, Azure DevOps y Helm charts.</p>
+                    </div>
+
+                    <div class="tech-card glass-panel reveal">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+                        <h3>Cloud Platforms</h3>
+                        <p>Microsoft Azure (AKS, APIM, Storage, VMs), Google Cloud Platform (Pub/Sub, Cloud SQL, Dataflow).</p>
+                    </div>
+
+                    <div class="tech-card glass-panel reveal">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka" style="background:#fff; border-radius:8px; padding:4px;">
+                        <h3>Streaming &amp; Eventos</h3>
+                        <p>Apache Kafka, Google Pub/Sub, Event-Driven Architecture (EDA) y patrones de sincronización reactiva.</p>
+                    </div>
+
+                    <div class="tech-card glass-panel reveal">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="background:#fff; border-radius:8px; padding:4px;">
+                        <h3>Productividad con IA</h3>
+                        <p>GitHub Copilot, Gemini, Claude, agentes de análisis estático, pair programming y refactorización guiada.</p>
+                    </div>
+
+                    <div class="tech-card glass-panel reveal">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" alt="Elasticsearch">
+                        <h3>Observabilidad</h3>
+                        <p>Elasticsearch, Kibana, logs centralizados, trazas distribuidas y monitoreo transaccional proactivo.</p>
+                    </div>
+
+                    <div class="tech-card glass-panel reveal">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        <h3>Frontend &amp; Entornos</h3>
+                        <p>React, Node.js, TypeScript básico, Linux (Ubuntu, CachyOS) y scripting para automatización.</p>
+                    </div>
+
+                    <div class="tech-card glass-panel reveal">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" alt="Testing">
+                        <h3>Calidad &amp; Testing</h3>
+                        <p>JUnit 5, Mockito, pruebas de integración, k6 para performance y stress testing, SonarQube.</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Carga los logos disponibles y conserva las iniciales como fallback. -->
-            <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    var companyDomains = {
-                        imagemaker: 'imagemaker.com',
-                        falabella: 'falabella.com',
-                        globant: 'globant.com',
-                        'bc tecnologia': 'bctecnologia.com',
-                        emergya: 'emergya.com'
-                    };
+            <!-- SECCIÓN IA APLICADA -->
+            <section id="ia-aplicada" class="max-w-7xl mx-auto px-6 pb-20">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Inteligencia Artificial Aplicada</p>
+                    <h2>Agentes de IA integrados al ciclo de vida del software</h2>
+                </div>
 
-                    document.querySelectorAll('.timeline .company-identity').forEach(function (ci) {
-                        var labelEl = ci.querySelector('.company-label');
-                        var brandMark = ci.querySelector('.brand-mark');
-                        if (!labelEl || !brandMark) return;
-                        var img = brandMark.querySelector('.company-logo');
-                        var initial = brandMark.querySelector('.company-initial');
-                        var label = labelEl.textContent.trim();
-                        var companyKey = label.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-                        var domain = companyDomains[companyKey];
-                        if (!img || !domain) return;
+                <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
+                    <article class="tech-card glass-panel reveal">
+                        <div class="text-3xl mb-3">🤖</div>
+                        <h3>Asistentes de IA &amp; Pair</h3>
+                        <p>Uso avanzado de GitHub Copilot, Gemini y Claude como copilotos en análisis de código,
+                            tests unitarios y diseño de contratos API.</p>
+                    </article>
+                    <article class="tech-card glass-panel reveal">
+                        <div class="text-3xl mb-3">⚡</div>
+                        <h3>Agentes de Desarrollo</h3>
+                        <p>Creación y orquestación de agentes analíticos para acelerar migraciones a
+                            microservicios y verificación de reglas de negocio.</p>
+                    </article>
+                    <article class="tech-card glass-panel reveal">
+                        <div class="text-3xl mb-3">🛡️</div>
+                        <h3>Seguridad &amp; Vulnerabilidades</h3>
+                        <p>Escaneo continuo asistido por IA para mitigar brechas de seguridad, dependencias
+                            obsoletas y vectores de ataque OWASP.</p>
+                    </article>
+                    <article class="tech-card glass-panel reveal">
+                        <div class="text-3xl mb-3">📊</div>
+                        <h3>Monitoreo Inteligente</h3>
+                        <p>Centralización de logs con Elasticsearch y alertas predictivas para
+                            garantizar 99.9% de SLA en pagos digitales.</p>
+                    </article>
+                </div>
+            </section>
 
-                        img.alt = label + ' logo';
+            <!-- SECCIÓN CLIENTES Y PARTNERS (Carrusel Marquee) -->
+            <section class="max-w-7xl mx-auto px-6 pb-20">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Experiencia Empresarial</p>
+                    <h2>Empresas y clientes de primer nivel donde he generado impacto</h2>
+                </div>
 
-                        img.onload = function () {
-                            img.style.display = 'grid';
-                            if (initial) initial.style.display = 'none';
-                        };
-                        img.onerror = function () {
-                            img.style.display = 'none';
-                            if (initial) initial.style.display = 'grid';
-                        };
+                <div class="brand-carousel reveal" aria-label="Empresas y marcas de experiencia">
+                    <div class="brand-track">
+                        <div class="brand-track-inner" data-brand-track-inner>
+                            <div class="brand-card glass-panel">
+                                <div class="brand-logo-tile"><img src="img-cv/logos/metlife.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
+                                <div class="brand-card-info">
+                                    <strong>MetLife</strong>
+                                    <span>Seguros &amp; Pagos</span>
+                                </div>
+                            </div>
+                            <div class="brand-card glass-panel">
+                                <div class="brand-logo-tile"><img src="img-cv/logos/falabella.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
+                                <div class="brand-card-info">
+                                    <strong>Falabella</strong>
+                                    <span>Retail &amp; eCommerce</span>
+                                </div>
+                            </div>
+                            <div class="brand-card glass-panel">
+                                <div class="brand-logo-tile"><img src="img-cv/logos/ikea.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
+                                <div class="brand-card-info">
+                                    <strong>IKEA</strong>
+                                    <span>Integración Retail</span>
+                                </div>
+                            </div>
+                            <div class="brand-card glass-panel">
+                                <div class="brand-logo-tile"><img src="img-cv/logos/globant.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
+                                <div class="brand-card-info">
+                                    <strong>Globant</strong>
+                                    <span>Consultoría Digital</span>
+                                </div>
+                            </div>
+                            <div class="brand-card glass-panel">
+                                <div class="brand-logo-tile"><img src="img-cv/logos/latam.svg" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
+                                <div class="brand-card-info">
+                                    <strong>LATAM</strong>
+                                    <span>LATAM Pass / Aerolínea</span>
+                                </div>
+                            </div>
+                            <div class="brand-card glass-panel">
+                                <div class="brand-logo-tile"><img src="img-cv/logos/transbank.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
+                                <div class="brand-card-info">
+                                    <strong>Transbank</strong>
+                                    <span>Pasarela de Pagos</span>
+                                </div>
+                            </div>
+                            <div class="brand-card glass-panel">
+                                <div class="brand-logo-tile"><img src="img-cv/logos/toku.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
+                                <div class="brand-card-info">
+                                    <strong>TOKU</strong>
+                                    <span>Suscripciones &amp; Pagos</span>
+                                </div>
+                            </div>
+                            <div class="brand-card glass-panel">
+                                <div class="brand-logo-tile"><img src="img-cv/logos/imagemaker.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
+                                <div class="brand-card-info">
+                                    <strong>Imagemaker</strong>
+                                    <span>Tech Services</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-                        // Start with hidden image; the handlers will set visibility
-                        img.style.display = 'none';
-                        if (initial) initial.style.display = 'grid';
-                        img.src = 'https://www.google.com/s2/favicons?domain=' + domain + '&sz=128';
-                    });
-                });
-            </script>
+            <!-- SECCIÓN CONTACTO & CTA -->
+            <section id="contacto" class="max-w-5xl mx-auto px-6 pb-24">
+                <div class="cta glass-panel reveal">
+                    <div>
+                        <p class="eyebrow">Contacto &amp; Oportunidades</p>
+                        <h2>Construyamos soluciones digitales con impacto real.</h2>
+                        <p class="text-slate-300 text-sm sm:text-base mt-2 max-w-lg">
+                            ¿Buscas un Technical Lead para liderar tus arquitecturas backend, modernizaciones cloud o aceleración con IA? Conversemos.
+                        </p>
+                    </div>
 
-            <script>
-                const revealElements = document.querySelectorAll('.reveal');
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.12 });
-                revealElements.forEach(el => observer.observe(el));
+                    <div class="cta-actions">
+                        <a href="mailto:aperezbreton@gmail.com" class="primary-btn" aria-label="Enviar un email a Alejandro Pérez Bretón">
+                            <span class="contact-btn-icon">
+                                <svg viewBox="0 0 24 24"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.2-.75 6.8 5.18 6.8-5.18H5.2Zm13.05 2.2-5.96 4.54a1 1 0 0 1-1.18 0L5.75 8.2v9.05c0 .41.34.75.75.75h10.99c.41 0 .75-.34.75-.75V8.2Z" /></svg>
+                            </span>
+                            <span class="contact-btn-copy">
+                                <span class="contact-btn-label">Escríbeme</span>
+                                <span class="contact-btn-detail">aperezbreton@gmail.com</span>
+                            </span>
+                        </a>
 
-                const brandTrackInner = document.querySelector('[data-brand-track-inner]');
-                if (brandTrackInner) {
-                    const brandCards = Array.from(brandTrackInner.children);
-                    brandCards.forEach(card => {
-                        const clone = card.cloneNode(true);
-                        clone.setAttribute('aria-hidden', 'true');
-                        brandTrackInner.appendChild(clone);
-                    });
-                }
+                        <button type="button" onclick="copyEmailToClipboard()" class="secondary-btn" aria-label="Copiar correo">
+                            <span class="contact-btn-icon">
+                                <svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                            </span>
+                            <span class="contact-btn-copy">
+                                <span class="contact-btn-label">Copiar Email</span>
+                                <span class="contact-btn-detail">Al portapapeles</span>
+                            </span>
+                        </button>
 
-                document.querySelectorAll('.brand-card img').forEach(image => {
-                    image.addEventListener('error', () => {
-                        image.hidden = true;
-                        image.nextElementSibling.style.display = 'grid';
-                    });
-                });
-            </script>
-
-            <script>
-                const revealElements = document.querySelectorAll('.reveal');
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.12 });
-                revealElements.forEach(el => observer.observe(el));
-
-                const brandTrackInner = document.querySelector('[data-brand-track-inner]');
-                if (brandTrackInner) {
-                    const brandCards = Array.from(brandTrackInner.children);
-                    brandCards.forEach(card => {
-                        const clone = card.cloneNode(true);
-                        clone.setAttribute('aria-hidden', 'true');
-                        brandTrackInner.appendChild(clone);
-                    });
-                }
-
-                document.querySelectorAll('.brand-card img').forEach(image => {
-                    image.addEventListener('error', () => {
-                        image.hidden = true;
-                        image.nextElementSibling.style.display = 'grid';
-                    });
-                });
-            </script>
-
+                        <a href="https://www.linkedin.com/in/alejandro-p%C3%A9rez-bret%C3%B3n-756459b0/" target="_blank" rel="noopener noreferrer" class="secondary-btn" aria-label="Visitar el perfil de LinkedIn">
+                            <span class="contact-btn-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28Z"/></svg>
+                            </span>
+                            <span class="contact-btn-copy">
+                                <span class="contact-btn-label">LinkedIn</span>
+                                <span class="contact-btn-detail">Perfil Profesional</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <!-- Footer -->
+        <footer class="max-w-7xl mx-auto px-6 py-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+            <div>
+                © 2026 <strong>Alejandro Pérez Bretón</strong> · Technical Lead &amp; Cloud Architect.
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#top" class="hover:text-cyan-400 transition-colors">Volver arriba ↑</a>
+                <a href="https://aperezbreton.com" class="hover:text-cyan-400 transition-colors">aperezbreton.com</a>
+            </div>
+        </footer>
     </div>
+
+    <!-- Scripts Limpios y Optimizados (Sin Duplicados) -->
+    <script>
+        // Animaciones de Scroll Reveal
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealElements = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            revealElements.forEach(el => observer.observe(el));
+
+            // Duplicación infinita para el carrusel de marcas
+            const brandTrackInner = document.querySelector('[data-brand-track-inner]');
+            if (brandTrackInner && !brandTrackInner.dataset.cloned) {
+                brandTrackInner.dataset.cloned = 'true';
+                const cards = Array.from(brandTrackInner.children);
+                cards.forEach(card => {
+                    const clone = card.cloneNode(true);
+                    clone.setAttribute('aria-hidden', 'true');
+                    brandTrackInner.appendChild(clone);
+                });
+            }
+
+            // Manejador del menú móvil
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    const isHidden = mobileMenu.classList.contains('hidden');
+                    if (isHidden) {
+                        mobileMenu.classList.remove('hidden');
+                        menuBtn.setAttribute('aria-expanded', 'true');
+                    } else {
+                        mobileMenu.classList.add('hidden');
+                        menuBtn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+        });
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            if (mobileMenu) mobileMenu.classList.add('hidden');
+            if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+        }
+
+        // Función para Copiar Correo con Toast
+        function copyEmailToClipboard() {
+            const email = 'aperezbreton@gmail.com';
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(email).then(showToast);
+            } else {
+                const textArea = document.createElement('textarea');
+                textArea.value = email;
+                textArea.style.position = 'fixed';
+                textArea.style.left = '-999999px';
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    showToast();
+                } catch (err) {
+                    window.location.href = 'mailto:' + email;
+                }
+                document.body.removeChild(textArea);
+            }
+        }
+
+        function showToast() {
+            const toast = document.getElementById('copy-toast');
+            if (!toast) return;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3500);
+        }
+    </script>
 </body>
 </html>

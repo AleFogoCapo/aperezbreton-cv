@@ -1,83 +1,52 @@
-# aperezbreton-cv
-CV-APB
+# Alejandro Pérez Bretón — CV & Portfolio Web
 
-Este proyecto contiene un currículum vitae profesional desarrollado en un único archivo HTML, con una propuesta visual moderna inspirada en el estilo de Apple: modo oscuro, vidrio esmerilado (glassmorphism), tipografía de alto contraste y una composición tipo "Bento Box".
+> **Technical Lead & Cloud Architect**
+> Especialista en arquitectura backend distribuida, microservicios de misión crítica, ecosistemas cloud (Azure / GCP), DevOps y adopción estratégica de Inteligencia Artificial.
 
-La estructura está pensada para presentarse como una tarjeta premium en web, y puede adaptarse tanto a una publicación en Google Sites como a una vista directa en navegador o a un despliegue en GitHub Pages o Vercel.
+Sitio web en producción: [aperezbreton.com](https://aperezbreton.com)
 
-## Descripción general
+---
 
-Se diseñó una propuesta visual con:
+## 🚀 Características y Arquitectura del Sitio
 
-- tema oscuro completo
-- alto contraste tipográfico
-- cards con efecto glassmorphism
-- distribución moderna en grillas
-- integración estética de logos reales y oficiales de clientes y empresas
+El proyecto es un currículum web interactivo de alto impacto visual y rendimiento extremo, construido bajo los estándares y tendencias de diseño 2025/2026 (inspiración Apple / Linear, Dark Mode, Bento Grid y Glassmorphism):
 
-Entre las marcas consideradas en la propuesta visual se encuentran MetLife, Falabella, IKEA, Globant, LATAM y Transbank.
+### 1. Experiencia de Usuario & Reclutadores (Human UX)
+- **Descarga de CV en PDF integrada:** Botón 1-click en el navbar y hero que activa la ventana de impresión/exportación con un formato ejecutivo A4 adaptado.
+- **Hoja de estilos `@media print` (ATS-Friendly):** Al imprimir o guardar como PDF (`Cmd + P`), el diseño se adapta a un documento ejecutivo de 2 páginas con fondo blanco, tipografía nítida y estructura sin elementos oscuros o decorativos desbordados.
+- **Botón "Copiar Email":** Copiado al portapapeles con feedback visual mediante un **toast notification** flotante (`aperezbreton@gmail.com`).
+- **Navegación Responsive Móvil:** Barra de navegación con menú desplegable para dispositivos móviles.
+- **Identidad visual de la trayectoria:** Logos locales de los empleadores en la línea de tiempo y de empresas/clientes en el carrusel (Imagemaker, Falabella, Globant, BC Tecnología, Emergya, MetLife, IKEA, LATAM, Transbank y TOKU), sin depender de servicios externos para cargarlos.
 
-## Cómo usarlo
+### 2. Optimización para Motores de Reclutamiento & Bots de IA (Machine/ATS Ready)
+- **Schema.org (JSON-LD):** Metadatos estructurados para `Person` y `ProfilePage` (`knowsAbout`, `jobTitle`, `worksFor`, `sameAs`) para indexación precisa en LinkedIn Recruiter, Google for Jobs y sistemas ATS.
+- **Open Graph & Twitter Cards:** Tarjetas de previsualización enriquecida al compartir el enlace en LinkedIn, WhatsApp, Slack o Twitter.
+- **Favicon Vectorial SVG Nativo:** Embebido vía Data URI con el monograma APB en alta definición.
 
-### 1) Abrir directamente en el navegador
+### 3. Sección "Architecture Spotlight"
+- Desglose del caso de éxito técnico: **Migración del Hub de Pagos Digitales (MetLife Chile / Imagemaker)**, detallando arquitectura hexagonal en Spring Boot 3, Azure Kubernetes Service (AKS), Azure APIM, observabilidad con Elasticsearch y pasarelas de pago (Transbank / TOKU).
 
-- Guarda el contenido del archivo HTML en un archivo llamado `index.html`
-- Abre ese archivo en tu navegador favorito
+---
 
-### 2) Insertarlo en Google Sites
+## 🛠️ Stack Técnico del Proyecto
 
-1. En tu Google Sites, ve a la opción Insertar.
-2. Selecciona Insertar código o Embed code.
-3. Pega el contenido HTML completo.
-4. Ajusta el ancho y la altura del bloque según el espacio disponible.
+- **HTML5 Semántico & Accesible** (cumplimiento WCAG y navegación por teclado).
+- **CSS Moderno:** Variables CSS nativas, glassmorphism (`backdrop-filter`), animaciones fluidas con aceleración por GPU.
+- **Tailwind CSS:** Utilidades de layout y espaciado ágil.
+- **JavaScript Vanilla (ES6+):** Cero dependencias pesadas; utiliza `IntersectionObserver` y `navigator.clipboard`.
 
-### 3) Publicarlo en una web gratuita
+---
 
-También puedes publicar el archivo en GitHub Pages, Vercel o plataformas similares, simplemente con subir el archivo `index.html`.
+## 💻 Cómo desplegar o ejecutar localmente
 
-## Configuración recomendada para Google Sites
-
-- Tema: fondo negro puro (`#000000`) o gris espacial (`#1C1C1E`)
-- Tipografía: Inter, Roboto u Open Sans, para aproximar la sensación visual de San Francisco
-- Imágenes: usar logos con fondo transparente y aplicar filtros monocromáticos blancos para mejorar la legibilidad sobre fondo oscuro
-
-## Estructura del contenido
-
-### Bloque 1: Encabezado principal
-- Título: Alejandro Andrés Pérez Bretón
-- Subtítulo: Technical Lead | Arquitectura Backend & DevOps
-- Diseño: centrado, limpio y con espacio amplio para lograr una estética minimalista
-
-### Bloque 2: Sobre mí
-Texto orientado a describir la especialización en arquitectura backend, DevOps y automatización de despliegues, con enfoque en rendimiento, escalabilidad y ecosistemas robustos.
-
-### Bloque 3: Experiencia profesional
-- Rol principal: Technical Lead
-- Empresa destacada: Imagemaker Servicios Tecnológicos Ltda.
-- Enfoque: liderazgo técnico, diseño de arquitecturas escalables, microservicios y despliegues en la nube
-
-### Bloque 4: Ecosistema técnico
-- Backend y core: Java, Spring Boot, Spring Batch, REST APIs, JPA/Hibernate, MyBatis
-- DevOps y cloud: Azure API Management, Docker, Kubernetes, k6, Kafka
-- Frontend y entornos: React, Node.js, Linux (Ubuntu/CachyOS)
-
-### Bloque 5: Contacto
-- Ubicación: Santiago, Chile
-- Acción: botón de estilo outline con enlace a LinkedIn o correo electrónico
-
-## Ejemplo de tarjeta premium
-
-Si deseas un bloque aún más visual y elegante para Google Sites, puedes usar este fragmento HTML:
-
-```html
-<div style="background: rgba(28, 28, 30, 0.8); backdrop-filter: blur(20px); border-radius: 16px; padding: 40px; border: 1px solid rgba(255,255,255,0.1); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: white; text-align: center; max-width: 600px; margin: auto;">
-  <h1 style="margin: 0; font-size: 2.5em; font-weight: 600; tracking: -0.5px;">Alejandro A. Pérez Bretón</h1>
-  <p style="color: #A1A1A6; font-size: 1.2em; margin-top: 10px;">Technical Lead & Cloud Architect</p>
-</div>
-```
-
-## Nota
-
-Esta propuesta se estructura a partir de la trayectoria profesional actual y del stack tecnológico principal, como referencia visual y estratégica para una presentación moderna del perfil profesional.
-
-
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/AleFogoCapo/aperezbreton-cv.git
+   cd aperezbreton-cv
+   ```
+2. Abre `index.html` en tu navegador o levanta un servidor local:
+   ```bash
+   # Con Python
+   python3 -m http.server 8000
+   ```
+3. Visita `http://localhost:8000`.
